@@ -1,0 +1,181 @@
+/* Chickady's wordmark — the original lettering, untouched.
+   The reveal is a clip wipe, a travelling highlight and one small spring.
+   No gradients: the highlight is a solid skewed bar masked by the mark. */
+
+.cd-logo {
+  --logo-ink: #fffaf3;
+  --logo-panel: #f4510b;
+  --logo-streak: #ffffff;
+  position: relative;
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 548 / 278;
+  isolation: isolate;
+}
+
+.cd-logo__panel {
+  position: absolute;
+  inset: 0;
+  background: var(--logo-panel);
+  z-index: 0;
+  transform-origin: 50% 50%;
+}
+
+.cd-logo__mark,
+.cd-logo__streak {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: var(--logo-mask);
+  mask-image: var(--logo-mask);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.cd-logo__mark {
+  z-index: 1;
+  background-color: var(--logo-ink);
+}
+
+.cd-logo__streak {
+  z-index: 2;
+  background-color: var(--logo-streak);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cd-logo__streak::before {
+  content: "";
+  position: absolute;
+  inset-block: -30%;
+  inset-inline-start: 8%;
+  inline-size: 16%;
+  background: var(--logo-streak);
+  transform: skewX(-16deg);
+  transform-origin: center;
+}
+
+/* ---- variants ---------------------------------------------------------- */
+
+.cd-logo[data-variant="wordmark"] {
+  --logo-mask: url("/brand/chickadys-wordmark.png");
+}
+
+.cd-logo[data-variant="badge"] {
+  --logo-mask: url("/brand/chickadys-badge.png");
+}
+
+/* Tones: the mark is a mask, so it can be printed in any ink. */
+.cd-logo[data-tone="cream"] {
+  --logo-ink: #fffaf3;
+  --logo-panel: #f4510b;
+  --logo-streak: #ffffff;
+}
+
+.cd-logo[data-tone="ink"] {
+  --logo-ink: #171310;
+  --logo-panel: #f4510b;
+  --logo-streak: #ffffff;
+}
+
+.cd-logo[data-tone="yellow"] {
+  --logo-ink: #ffcf2e;
+  --logo-panel: #090909;
+  --logo-streak: #fff6d0;
+}
+
+/* Static: no panel, mark only. Used in the header and the footer. */
+.cd-logo[data-panel="off"] .cd-logo__panel {
+  display: none;
+}
+
+.cd-logo[data-animate="off"] .cd-logo__mark {
+  animation: none;
+  opacity: 1;
+  clip-path: none;
+  background-color: var(--logo-ink);
+}
+
+.cd-logo[data-animate="off"] .cd-logo__streak {
+  display: none;
+}
+
+/* ---- the entrance ------------------------------------------------------ */
+
+.cd-logo[data-animate="on"] .cd-logo__panel {
+  animation: cd-logo-panel 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.cd-logo[data-animate="on"] .cd-logo__mark {
+  animation: cd-logo-reveal 640ms cubic-bezier(0.22, 1, 0.36, 1) 180ms both;
+  background-color: var(--logo-ink);
+}
+
+.cd-logo[data-animate="on"] .cd-logo__streak {
+  animation: cd-logo-sweep 720ms cubic-bezier(0.4, 0, 0.2, 1) 640ms both;
+}
+
+@keyframes cd-logo-panel {
+  0% {
+    opacity: 0;
+    transform: scale(0.82);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cd-logo-reveal {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transform: scale(1.04);
+  }
+  55% {
+    opacity: 1;
+  }
+  78% {
+    clip-path: inset(0 0 0 0);
+    transform: scale(1.035);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes cd-logo-sweep {
+  0% {
+    opacity: 0;
+    transform: translate3d(-110%, 0, 0);
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(110%, 0, 0);
+  }
+}
+
+/* The badge sits on black, so its cream becomes yellow. */
+@media (prefers-reduced-motion: reduce) {
+  .cd-logo[data-animate="on"] .cd-logo__panel,
+  .cd-logo[data-animate="on"] .cd-logo__mark,
+  .cd-logo[data-animate="on"] .cd-logo__streak {
+    animation: none;
+    opacity: 1;
+    clip-path: none;
+  }
+  .cd-logo[data-animate="on"] .cd-logo__streak {
+    display: none;
+  }
+}

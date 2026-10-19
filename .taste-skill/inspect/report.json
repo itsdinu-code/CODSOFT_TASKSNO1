@@ -1,0 +1,3042 @@
+{
+ "url": "http://localhost:3210/",
+ "at": "2026-10-19T16:59:06.167Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.71,
+    0.46,
+    0.52,
+    0.59,
+    0.83,
+    0.88,
+    0.32,
+    0.86,
+    0.94,
+    0.69,
+    0.61,
+    0.64
+   ],
+   "motion": {
+    "elements": 24,
+    "css": 23,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 11331,
+     "screens": 12.6,
+     "words": 1549,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 13,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "box-solid-treat.jpg",
+      "board-menu.jpg",
+      "campaign-red-dragon.jpg",
+      "campaign-open-late.jpg",
+      "campaign-saucy-wings.jpg",
+      "ice-cream-chocolate.jpg",
+      "fried-row.jpg",
+      "meal-box-ultimate.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+     "words": 7,
+     "chars": 43,
+     "lines": 2,
+     "size": 96,
+     "vw": 6.7,
+     "font": "Barlow Condensed",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.57,
+     "top": 265,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+     "words": 7,
+     "lines": 2,
+     "size": 96,
+     "font": "Barlow Condensed"
+    },
+    "headings": [
+     {
+      "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+      "words": 7,
+      "chars": 43,
+      "lines": 2,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 265,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "FRIED TO ORDER",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1209,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Noon",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1365,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "11:45 pm",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.26,
+      "top": 1365,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "â‚¹172",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1530,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "14 pieces",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.26,
+      "top": 1530,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "THE MENU",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.41,
+      "top": 2294,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHAT THE KITCHEN IS PUSHING",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 4049,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "EVERY BOX HAS A TICKET",
+      "words": 5,
+      "chars": 22,
+      "lines": 2,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 4854,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEAL BOXES",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 5823,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "THE SHOP",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6615,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.3/5",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.38,
+      "top": 8516,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "COME BY THE COUNTER",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 9127,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BEFORE YOU ORDER",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 9931,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BUILD YOUR BOX",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 10427,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "COME HUNGRY",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 10735,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Barlow",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Barlow Condensed",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      19,
+      20,
+      44,
+      48,
+      96
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Barlow",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 70,
+     "max": {
+      "size": 96,
+      "vw": 6.7,
+      "font": "Barlow Condensed",
+      "text": "Fried chicken,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.08,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff1d4",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 1,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#171310",
+       "top": 64,
+       "hsl": {
+        "h": 26,
+        "s": 0.18,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#fff1d4",
+       "top": 185,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#f4510b",
+       "top": 2087,
+       "hsl": {
+        "h": 18,
+        "s": 0.91,
+        "l": 0.5
+       }
+      },
+      {
+       "color": "#f7e3bd",
+       "top": 3880,
+       "hsl": {
+        "h": 39,
+        "s": 0.78,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#090909",
+       "top": 4774,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#171310",
+       "share": 0.36
+      },
+      {
+       "color": "#5c4a3e",
+       "share": 0.31
+      },
+      {
+       "color": "#3a2c22",
+       "share": 0.15
+      },
+      {
+       "color": "#fff6e6",
+       "share": 0.12
+      },
+      {
+       "color": "#c43c08",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#171310",
+      "hsl": {
+       "h": 26,
+       "s": 0.18,
+       "l": 0.08
+      },
+      "fg": "#fff6e6"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Cart 0",
+      "Order online"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 4,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 10,
+     "squareMedia": 13,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 4106
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 5318
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.17
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "barlow condensed",
+     "barlow condensed fallback",
+     "barlow",
+     "barlow fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 11331,
+    "margins": {
+     "left": 32,
+     "right": 44
+    },
+    "sections": [
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 64,
+      "height": 994,
+      "words": 72,
+      "media": 1,
+      "middle": 61,
+      "heading": {
+       "text": "Fried chicken,",
+       "size": 96,
+       "tag": "h1"
+      },
+      "left": 80,
+      "right": 21,
+      "textLeft": 80,
+      "textRight": 232,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 1058,
+      "height": 1029,
+      "words": 80,
+      "media": 0,
+      "middle": 135,
+      "heading": {
+       "text": "Noon",
+       "size": 44,
+       "tag": "dt"
+      },
+      "left": 32,
+      "right": 58,
+      "textLeft": 32,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-accent.section",
+      "tag": "section",
+      "top": 2087,
+      "height": 1793,
+      "words": 139,
+      "media": 0,
+      "middle": 37,
+      "heading": {
+       "text": "BURGER",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 428,
+      "right": 428,
+      "textLeft": 428,
+      "textRight": 428,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 3880,
+      "height": 894,
+      "words": 170,
+      "media": 4,
+      "middle": 16,
+      "heading": {
+       "text": "Red Dragon",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": -108,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.relative.isolate",
+      "tag": "section",
+      "top": 4774,
+      "height": 897,
+      "words": 147,
+      "media": 1,
+      "middle": 115,
+      "heading": {
+       "text": "Every box has a ticket",
+       "size": 96,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 76,
+      "textLeft": 32,
+      "textRight": 76,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 5671,
+      "height": 746,
+      "words": 142,
+      "media": 1,
+      "middle": 137,
+      "heading": null,
+      "left": 32,
+      "right": 32,
+      "textLeft": 497,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 6417,
+      "height": 1531,
+      "words": 177,
+      "media": 4,
+      "middle": 16,
+      "heading": null,
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 7948,
+      "height": 988,
+      "words": 85,
+      "media": 1,
+      "middle": 17,
+      "heading": {
+       "text": "What people say",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 443,
+      "textLeft": 32,
+      "textRight": 514,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 8936,
+      "height": 826,
+      "words": 115,
+      "media": 0,
+      "middle": 183,
+      "heading": null,
+      "left": 220,
+      "right": 242,
+      "textLeft": 220,
+      "textRight": 242,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 9762,
+      "height": 528,
+      "words": 80,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 200,
+      "right": 200,
+      "textLeft": 216,
+      "textRight": 679,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 10290,
+      "height": 390,
+      "words": 59,
+      "media": 0,
+      "middle": 314,
+      "heading": {
+       "text": "Build your box",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 106,
+      "textLeft": 32,
+      "textRight": 106,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.field-accent.pt-0",
+      "tag": "footer",
+      "top": 10679,
+      "height": 652,
+      "words": 137,
+      "media": 0,
+      "middle": 223,
+      "heading": {
+       "text": "Come hungry",
+       "size": 96,
+       "tag": "p"
+      },
+      "left": 32,
+      "right": 271,
+      "textLeft": 32,
+      "textRight": 271,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+      "size": 96,
+      "top": 265,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 5
+     },
+     {
+      "x": 497,
+      "n": 4
+     },
+     {
+      "x": 80,
+      "n": 3
+     },
+     {
+      "x": 20,
+      "n": 2
+     },
+     {
+      "x": 416,
+      "n": 2
+     },
+     {
+      "x": 766,
+      "n": 2
+     },
+     {
+      "x": 780,
+      "n": 2
+     },
+     {
+      "x": 812,
+      "n": 2
+     },
+     {
+      "x": 1208,
+      "n": 2
+     },
+     {
+      "x": 220,
+      "n": 1
+     },
+     {
+      "x": 232,
+      "n": 1
+     },
+     {
+      "x": 985,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 1440,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.65,
+    0.7,
+    0.65,
+    0.27,
+    0.64,
+    0.72,
+    0.38,
+    0.81,
+    0.87,
+    0.96,
+    0.63,
+    0.76
+   ],
+   "motion": {
+    "elements": 25,
+    "css": 24,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 13892,
+     "screens": 13.6,
+     "words": 1541,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 12,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "box-solid-treat.jpg",
+      "board-menu.jpg",
+      "campaign-red-dragon.jpg",
+      "campaign-open-late.jpg",
+      "campaign-saucy-wings.jpg",
+      "ice-cream-chocolate.jpg",
+      "fried-row.jpg",
+      "campaign-red-dragon.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+     "words": 7,
+     "chars": 43,
+     "lines": 2,
+     "size": 56,
+     "vw": 7.3,
+     "font": "Barlow Condensed",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.86,
+     "top": 257,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+     "words": 7,
+     "lines": 2,
+     "size": 56,
+     "font": "Barlow Condensed"
+    },
+    "headings": [
+     {
+      "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+      "words": 7,
+      "chars": 43,
+      "lines": 2,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 257,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "FRIED TO ORDER",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1706,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Noon",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 1919,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "11:45 pm",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 1919,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "â‚¹172",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 2075,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "14 pieces",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 2075,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "THE MENU",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 3148,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHAT THE KITCHEN IS PUSHING",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4728,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "EVERY BOX HAS A TICKET",
+      "words": 5,
+      "chars": 22,
+      "lines": 2,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 5534,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEAL BOXES",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 6838,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "THE SHOP",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7536,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.3/5",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.68,
+      "top": 10630,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "COME BY THE COUNTER",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 11141,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BEFORE YOU ORDER",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 12065,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BUILD YOUR BOX",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 12730,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "COME HUNGRY",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 13032,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Barlow",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Barlow Condensed",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      36,
+      56
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Barlow",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 70,
+     "max": {
+      "size": 56,
+      "vw": 7.3,
+      "font": "Barlow Condensed",
+      "text": "Fried chicken,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.08,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff1d4",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 1,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#171310",
+       "top": 64,
+       "hsl": {
+        "h": 26,
+        "s": 0.18,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#fff1d4",
+       "top": 177,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#f4510b",
+       "top": 3001,
+       "hsl": {
+        "h": 18,
+        "s": 0.91,
+        "l": 0.5
+       }
+      },
+      {
+       "color": "#f7e3bd",
+       "top": 4637,
+       "hsl": {
+        "h": 39,
+        "s": 0.78,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#090909",
+       "top": 5454,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#171310",
+       "share": 0.36
+      },
+      {
+       "color": "#5c4a3e",
+       "share": 0.32
+      },
+      {
+       "color": "#3a2c22",
+       "share": 0.15
+      },
+      {
+       "color": "#fff6e6",
+       "share": 0.12
+      },
+      {
+       "color": "#c43c08",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#171310",
+      "hsl": {
+       "h": 26,
+       "s": 0.18,
+       "l": 0.08
+      },
+      "fg": "#171310"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 3,
+     "radius": 0,
+     "height": 74,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Cart 0",
+      "Order online"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 4,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 14,
+     "squareMedia": 12,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 4848
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 5889
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "barlow condensed",
+     "barlow condensed fallback",
+     "barlow",
+     "barlow fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 13892,
+    "margins": {
+     "left": 17,
+     "right": 17
+    },
+    "sections": [
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 64,
+      "height": 1551,
+      "words": 72,
+      "media": 1,
+      "middle": 14,
+      "heading": {
+       "text": "Fried chicken,",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 17,
+      "right": 53,
+      "textLeft": 17,
+      "textRight": 53,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 1615,
+      "height": 1386,
+      "words": 80,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Noon",
+       "size": 36,
+       "tag": "dt"
+      },
+      "left": 17,
+      "right": 32,
+      "textLeft": 17,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-accent.section",
+      "tag": "section",
+      "top": 3001,
+      "height": 1636,
+      "words": 139,
+      "media": 0,
+      "middle": 37,
+      "heading": {
+       "text": "BURGER",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 92,
+      "right": 92,
+      "textLeft": 92,
+      "textRight": 92,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 4637,
+      "height": 817,
+      "words": 170,
+      "media": 4,
+      "middle": 440,
+      "heading": {
+       "text": "Red Dragon",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": -780,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.relative.isolate",
+      "tag": "section",
+      "top": 5454,
+      "height": 1293,
+      "words": 147,
+      "media": 1,
+      "middle": 49,
+      "heading": {
+       "text": "Every box has a ticket",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 85,
+      "textLeft": 17,
+      "textRight": 85,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 6747,
+      "height": 697,
+      "words": 142,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 7444,
+      "height": 2631,
+      "words": 177,
+      "media": 4,
+      "middle": 4,
+      "heading": null,
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 10076,
+      "height": 934,
+      "words": 85,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "What people say",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 118,
+      "textLeft": 17,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 11010,
+      "height": 964,
+      "words": 115,
+      "media": 0,
+      "middle": 105,
+      "heading": null,
+      "left": 57,
+      "right": 75,
+      "textLeft": 57,
+      "textRight": 75,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 11974,
+      "height": 452,
+      "words": 80,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 17,
+      "right": 17,
+      "textLeft": 33,
+      "textRight": 190,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 12426,
+      "height": 550,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Build your box",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 53,
+      "textLeft": 17,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.field-accent.pt-0",
+      "tag": "footer",
+      "top": 12976,
+      "height": 916,
+      "words": 137,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Come hungry",
+       "size": 56,
+       "tag": "p"
+      },
+      "left": 17,
+      "right": 160,
+      "textLeft": 17,
+      "textRight": 160,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+      "size": 56,
+      "top": 257,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 17,
+      "n": 10
+     },
+     {
+      "x": 49,
+      "n": 7
+     },
+     {
+      "x": 416,
+      "n": 3
+     },
+     {
+      "x": 444,
+      "n": 2
+     },
+     {
+      "x": 812,
+      "n": 2
+     },
+     {
+      "x": 1208,
+      "n": 2
+     },
+     {
+      "x": 400,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.68,
+    0.73,
+    0.5,
+    0.41,
+    0.44,
+    0.8,
+    0.73,
+    0.41,
+    0.62,
+    0.88,
+    0.97,
+    0.69
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 27,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 13280,
+     "screens": 15.7,
+     "words": 1522,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "box-solid-treat.jpg",
+      "board-menu.jpg",
+      "campaign-red-dragon.jpg",
+      "campaign-open-late.jpg",
+      "campaign-saucy-wings.jpg",
+      "fried-row.jpg",
+      "campaign-red-dragon.jpg",
+      "board-fried-chicken.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+     "words": 7,
+     "chars": 43,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Barlow Condensed",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.79,
+     "top": 209,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+     "words": 7,
+     "lines": 2,
+     "size": 40,
+     "font": "Barlow Condensed"
+    },
+    "headings": [
+     {
+      "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+      "words": 7,
+      "chars": 43,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 209,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "FRIED TO ORDER",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1372,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Noon",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 1592,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "11:45 pm",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.4,
+      "top": 1592,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "â‚¹172",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 1766,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "14 pieces",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.4,
+      "top": 1766,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "THE MENU",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2674,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHAT THE KITCHEN IS PUSHING",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4366,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "EVERY BOX HAS A TICKET",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5189,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEAL BOXES",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6299,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "THE SHOP",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7384,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.3/5",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 9529,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "COME BY THE COUNTER",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 10087,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BEFORE YOU ORDER",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11223,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BUILD YOUR BOX",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 11922,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "COME HUNGRY",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12305,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Barlow",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Barlow Condensed",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      20,
+      28,
+      40
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Barlow",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Barlow Condensed",
+      "text": "Fried chicken,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.08,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fff1d4",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 1,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#171310",
+       "top": 64,
+       "hsl": {
+        "h": 26,
+        "s": 0.18,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#fff1d4",
+       "top": 145,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#f4510b",
+       "top": 2548,
+       "hsl": {
+        "h": 18,
+        "s": 0.91,
+        "l": 0.5
+       }
+      },
+      {
+       "color": "#f7e3bd",
+       "top": 4280,
+       "hsl": {
+        "h": 39,
+        "s": 0.78,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#090909",
+       "top": 5125,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#171310",
+       "share": 0.36
+      },
+      {
+       "color": "#5c4a3e",
+       "share": 0.32
+      },
+      {
+       "color": "#3a2c22",
+       "share": 0.15
+      },
+      {
+       "color": "#fff6e6",
+       "share": 0.12
+      },
+      {
+       "color": "#c43c08",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#171310",
+      "hsl": {
+       "h": 26,
+       "s": 0.18,
+       "l": 0.08
+      },
+      "fg": "#171310"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 3,
+     "radius": 0,
+     "height": 74,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Cart 0",
+      "Order online"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 10,
+     "squareMedia": 8,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 4502
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 10380
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "barlow condensed",
+     "barlow condensed fallback",
+     "barlow",
+     "barlow fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 13280,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 64,
+      "height": 1222,
+      "words": 72,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Fried chicken,",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 43,
+      "textLeft": 16,
+      "textRight": 43,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 1286,
+      "height": 1262,
+      "words": 80,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Noon",
+       "size": 28,
+       "tag": "dt"
+      },
+      "left": 16,
+      "right": 42,
+      "textLeft": 16,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-accent.section",
+      "tag": "section",
+      "top": 2548,
+      "height": 1733,
+      "words": 139,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "BURGER",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 4280,
+      "height": 844,
+      "words": 170,
+      "media": 4,
+      "middle": 661,
+      "heading": {
+       "text": "Red Dragon",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": -947,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.relative.isolate",
+      "tag": "section",
+      "top": 5125,
+      "height": 1089,
+      "words": 147,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Every box has a ticket",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 6213,
+      "height": 1084,
+      "words": 142,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 7298,
+      "height": 1795,
+      "words": 158,
+      "media": 4,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 9092,
+      "height": 884,
+      "words": 85,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "4.3",
+       "size": 40,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper.section",
+      "tag": "section",
+      "top": 9977,
+      "height": 1161,
+      "words": 115,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 40,
+      "right": 43,
+      "textLeft": 40,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-paper2.section",
+      "tag": "section",
+      "top": 11137,
+      "height": 487,
+      "words": 80,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 32,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field-ink.relative",
+      "tag": "section",
+      "top": 11624,
+      "height": 625,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Build your box",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.field-accent.pt-0",
+      "tag": "footer",
+      "top": 12249,
+      "height": 1031,
+      "words": 137,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Come hungry",
+       "size": 40,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CHICKADY’S — FRIED CHICKEN, BURGERS & FRIES",
+      "size": 40,
+      "top": 209,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 11
+     },
+     {
+      "x": 36,
+      "n": 7
+     },
+     {
+      "x": 48,
+      "n": 3
+     },
+     {
+      "x": 364,
+      "n": 2
+     },
+     {
+      "x": 707,
+      "n": 2
+     },
+     {
+      "x": 1051,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "dashed",
+   "width": 1440,
+   "message": "4 dashed/dotted border(s).",
+   "fix": "Remove unless it is a real drop zone.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #fff1d4, section #fff1d4, text #fff6e6).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (32px, 497px, 80px, 20px, 416px, 766px, 780px); the three most used hold only 44% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 768,
+   "message": "1 section(s) have content at both edges and 440px of nothing between: \"Red Dragon\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\desktop-page-02.jpg",
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "C:\\Users\\acer\\OneDrive\\Documents\\Default Project\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,491 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Chickady's x DineDesk — design tokens
+   Direction: "The page is the object" (the printed menu board).
+   Type: Archivo variable (wdth axis) — condensed display, normal text.
+   ========================================================================== */
+
+@theme {
+  /* Brand inks (from the printed menu board and the owner's published posts) */
+  --color-paper: #fff1d4;
+  --color-paper-2: #f7e3bd;
+  --color-paper-3: #eed4a4;
+  --color-ink: #171310;
+  --color-ink-2: #3a2c22;
+  --color-muted: #5c4a3e;
+  --color-accent: #f4510b;
+  --color-accent-deep: #c43c08;
+  --color-red: #e51b23;
+  --color-black: #090909;
+  --color-cream: #fff6e6;
+
+  --font-display: var(--font-barlow-condensed), "Arial Narrow", Helvetica, sans-serif;
+  --font-text: var(--font-barlow), "Helvetica Neue", Arial, sans-serif;
+  --font-plex: var(--font-plex-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-plex-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --radius-sheet: 0px;
+
+  --breakpoint-xs: 26rem;
+}
+
+:root {
+  /* Step scale — five sizes, far apart */
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.25rem, 1.3rem + 4vw, 4.5rem);
+  --step-display: clamp(3rem, 1rem + 8.5vw, 8.5rem);
+
+  /* One pair of page margins for the whole site */
+  --margin: clamp(1rem, 2.2vw, 2rem);
+  --gutter: clamp(0.75rem, 1.4vw, 1.5rem);
+
+  --sheet-radius: 0px;
+  --btn-radius: 999px;
+
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-text);
+    font-size: var(--step-body);
+    line-height: 1.5;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    hyphens: none;
+  }
+
+  p {
+    margin: 0;
+    max-width: 62ch;
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 0.07em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+@layer components {
+  .ink-focus:focus-visible {
+    outline-color: var(--color-ink);
+  }
+
+  /* Display face: the condensed, heavy face the board is printed in */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  .display-wide {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    text-wrap: balance;
+  }
+
+  /* The five sizes. Nothing else is allowed to set a font size. */
+  .t-display {
+    font-size: 2.5rem;
+  }
+  .t-head {
+    font-size: 1.75rem;
+  }
+  .t-lead {
+    font-size: 1.25rem;
+  }
+  .t-body {
+    font-size: 1.0625rem;
+  }
+  .t-small {
+    font-size: 0.8125rem;
+  }
+
+  @media (min-width: 768px) {
+    .t-display {
+      font-size: 3.5rem;
+    }
+    .t-head {
+      font-size: 2.25rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .t-display {
+      font-size: 6rem;
+    }
+    .t-head {
+      font-size: 2.75rem;
+    }
+  }
+
+  .eyebrow {
+    font-size: var(--step-small);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-muted);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Layout helpers */
+  .wrap {
+    padding-inline: var(--margin);
+  }
+
+  .grid12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+  }
+
+  .section {
+    padding-block: clamp(4rem, 9vw, 9rem);
+  }
+
+  .stack > * + * {
+    margin-top: var(--stack, 1rem);
+  }
+
+  /* Fields — the page changes ground colour, nothing fades into anything */
+  .field-paper {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  .field-ink {
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+  .field-accent {
+    background: var(--color-accent);
+    color: var(--color-ink);
+  }
+  .field-black {
+    background: var(--color-black);
+    color: var(--color-cream);
+  }
+  .field-paper2 {
+    background: var(--color-paper-2);
+    color: var(--color-ink);
+  }
+
+  .on-ink-muted {
+    color: #c9b49e;
+  }
+  .on-accent-muted {
+    color: #5e2408;
+  }
+
+  /* Artefact devices — scalloped sheet edges, perforations, coupon notches */
+  .scallop-bottom {
+    --sc: 30px;
+    -webkit-mask-image: linear-gradient(#000, #000),
+      radial-gradient(circle at 50% 100%, transparent calc(var(--sc) - 0.5px), #000 var(--sc));
+    mask-image: linear-gradient(#000, #000),
+      radial-gradient(circle at 50% 100%, transparent calc(var(--sc) - 0.5px), #000 var(--sc));
+    -webkit-mask-size: 100% calc(100% - var(--sc)), calc(var(--sc) * 2) var(--sc);
+    mask-size: 100% calc(100% - var(--sc)), calc(var(--sc) * 2) var(--sc);
+    -webkit-mask-position: top left, left bottom;
+    mask-position: top left, left bottom;
+    -webkit-mask-repeat: no-repeat, repeat-x;
+    mask-repeat: no-repeat, repeat-x;
+  }
+
+  .scallop-top {
+    --sc: 34px;
+    -webkit-mask-image: linear-gradient(#000, #000),
+      radial-gradient(circle at 50% 0, transparent calc(var(--sc) - 0.5px), #000 var(--sc));
+    mask-image: linear-gradient(#000, #000),
+      radial-gradient(circle at 50% 0, transparent calc(var(--sc) - 0.5px), #000 var(--sc));
+    -webkit-mask-size: 100% calc(100% - var(--sc)), calc(var(--sc) * 2) var(--sc);
+    mask-size: 100% calc(100% - var(--sc)), calc(var(--sc) * 2) var(--sc);
+    -webkit-mask-position: bottom left, left top;
+    mask-position: bottom left, left top;
+    -webkit-mask-repeat: no-repeat, repeat-x;
+    mask-repeat: no-repeat, repeat-x;
+  }
+
+  .scallop-both {
+    --sc: 30px;
+    -webkit-mask-image: radial-gradient(circle at 50% 0, transparent calc(var(--sc) - 0.5px), #000 var(--sc)),
+      radial-gradient(circle at 50% 100%, transparent calc(var(--sc) - 0.5px), #000 var(--sc)),
+      linear-gradient(#000, #000);
+    mask-image: radial-gradient(circle at 50% 0, transparent calc(var(--sc) - 0.5px), #000 var(--sc)),
+      radial-gradient(circle at 50% 100%, transparent calc(var(--sc) - 0.5px), #000 var(--sc)),
+      linear-gradient(#000, #000);
+    -webkit-mask-size: calc(var(--sc) * 2) var(--sc), calc(var(--sc) * 2) var(--sc),
+      100% calc(100% - var(--sc) * 2);
+    mask-size: calc(var(--sc) * 2) var(--sc), calc(var(--sc) * 2) var(--sc),
+      100% calc(100% - var(--sc) * 2);
+    -webkit-mask-position: left top, left bottom, left center;
+    mask-position: left top, left bottom, left center;
+    -webkit-mask-repeat: repeat-x, repeat-x, no-repeat;
+    mask-repeat: repeat-x, repeat-x, no-repeat;
+  }
+
+  .perforation {
+    background-image: radial-gradient(circle, var(--perf-colour, #f4510b) 3px, transparent 3.5px);
+    background-size: 14px 14px;
+    background-repeat: repeat-y;
+  }
+
+  .notch {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--notch-colour, #fff1d4);
+  }
+
+  /* Controls */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0.65rem 1.5rem;
+    border: 0;
+    border-radius: var(--btn-radius);
+    background: var(--color-accent);
+    color: var(--color-ink);
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 140ms ease, background-color 140ms ease, color 140ms ease;
+  }
+
+  .btn:hover {
+    background: var(--color-accent-deep);
+    color: var(--color-cream);
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+  }
+
+  .btn:disabled,
+  .btn[aria-disabled="true"] {
+    background: var(--color-paper-3);
+    color: var(--color-muted);
+    cursor: not-allowed;
+  }
+
+  .btn-ink {
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+  .btn-ink:hover {
+    background: var(--color-black);
+    color: var(--color-cream);
+  }
+
+  .btn-quiet {
+    background: transparent;
+    color: var(--color-ink);
+    box-shadow: inset 0 0 0 2px currentColor;
+  }
+  .btn-quiet:hover {
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+
+  .btn-sm {
+    min-height: 40px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9375rem;
+  }
+
+  /* Utilities */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: var(--margin);
+    top: 0;
+    z-index: 100;
+    transform: translateY(-120%);
+    background: var(--color-ink);
+    color: var(--color-cream);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 8px 8px;
+    transition: transform 140ms ease;
+  }
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* ==========================================================================
+   Motion — restrained, transform + opacity only
+   ========================================================================== */
+
+@keyframes cd-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes cd-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cd-pop {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.28);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cd-drift {
+  0%,
+  100% {
+    transform: scale(1.03) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.09) translate3d(-1.4%, -1.2%, 0);
+  }
+}
+
+/* The one moving picture: a slow drift across a photograph. */
+.drift {
+  animation: cd-drift 26s ease-in-out infinite;
+  will-change: transform;
+}
+
+/*
+ * Scroll-triggered reveals. The animation only runs where the browser
+ * supports a view timeline; everywhere else the content is simply there,
+ * so nothing can be stranded invisible.
+ */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: cd-rise 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
