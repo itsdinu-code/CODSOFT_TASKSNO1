@@ -58,8 +58,14 @@ export function useHydrated(): boolean {
 }
 
 /**
- * A clock that ticks on an interval. `getServerSnapshot` returns 0 so the
- * server and the first client render agree; the board then fills in.
+ * A clock that ticks on an interval.
+ *
+ * The snapshot is quantised to the interval, so repeated reads inside one
+ * window give the same value and React's "did the store change?" check
+ * converges. A raw `Date.now()` snapshot would change on every read and the
+ * component would loop into "Maximum update depth exceeded"; the timer then
+ * steps the bucket once per interval, which is exactly the scrolling clock
+ * the board wants.
  */
 export function useClock(intervalMs = 15000): number {
   const subscribe = useCallback(
@@ -72,7 +78,7 @@ export function useClock(intervalMs = 15000): number {
 
   return useSyncExternalStore(
     subscribe,
-    () => Date.now(),
+    () => Math.floor(Date.now() / intervalMs) * intervalMs,
     () => 0,
   );
 }

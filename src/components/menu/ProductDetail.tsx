@@ -7,6 +7,7 @@ import { formatRupees } from "@/lib/format";
 import { unitPriceFor } from "@/lib/pricing";
 import { categoryById } from "@/lib/menu/queries";
 import { CraveButton } from "./CraveButton";
+import { DishArt } from "./DishArt";
 import type { MenuItem } from "@/types";
 
 /**
@@ -70,13 +71,25 @@ export function ProductDetail({ item }: { item: MenuItem }) {
       {/* the print */}
       <div>
         {item.imageUrl ? (
-                    <img
+          <img
             src={item.imageUrl}
-            alt={`${item.name} from Chickady's printed menu board.`}
+            alt={
+              item.imageUrl.startsWith("/food/")
+                ? `${item.name}, from the restaurant's own food photographs.`
+                : `${item.name} from Chickady's printed menu board.`
+            }
             width={720}
             height={540}
             className="w-full object-cover"
           />
+        ) : item.art ? (
+          <figure className="m-0">
+            <DishArt kind={item.art} />
+            <figcaption className="mt-2 t-small text-muted">
+              Illustration for the demo — the owner&rsquo;s photograph for this
+              dish is still owed.
+            </figcaption>
+          </figure>
         ) : (
           <div className="flex aspect-4/3 w-full flex-col bg-paper-2">
             <div className="h-2 w-24 bg-accent" aria-hidden="true" />

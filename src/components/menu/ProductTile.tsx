@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useCart } from "@/lib/store/cart";
 import { formatRupees } from "@/lib/format";
 import { fromPrice } from "@/lib/menu/queries";
+import { DishArt } from "./DishArt";
 import type { MenuItem } from "@/types";
 
 /**
@@ -44,6 +45,22 @@ export function ProductTile({ item }: { item: MenuItem }) {
 
   return (
     <article className="flex h-full flex-col bg-paper">
+      {item.imageUrl ? (
+        <img
+          src={item.imageUrl}
+          alt={
+            item.imageUrl.startsWith("/food/")
+              ? `${item.name}, from the restaurant's own food photographs.`
+              : `${item.name} from Chickady's printed menu board.`
+          }
+          loading="lazy"
+          className="aspect-4/3 w-full object-cover"
+        />
+      ) : item.art ? (
+        <DishArt kind={item.art} className="shrink-0" />
+      ) : (
+        <div className="aspect-4/3 w-full bg-paper-2" />
+      )}
       <div className="h-1.5 w-14 bg-accent" aria-hidden="true" />
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between gap-4">

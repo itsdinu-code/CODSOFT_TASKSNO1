@@ -91,6 +91,41 @@ the menu/hero imagery (not the drift wall).
 | `gallery/ice-cream-chocolate.jpg` | Chocolate scoop, same card | Held — owner post; **retired from the home carousel 20 Oct 2026** — the "scoops are back" card now shows `/food/8100c805-4d74-408e-9424-e2ac096c9115.jpg` (Lotus-biscoff scoops, from the owner's own set) |
 | `gallery/maps-profile-updates.jpg` | The Google Maps profile screenshot | Held — **no longer shown on the site (20 Oct 2026)**; the Reviews card is typographic now. Kept on disk for reference only |
 
+## Menu dish imagery (20 October 2026)
+
+The owner asked that every dish a customer sees carries either one of the
+shared food photographs or, where no honest match exists, a generated
+illustration — never a photograph of a different dish.
+
+- **Confident photo mappings** (the frame plausibly shows the dish or the
+  same family, made by reasoning over the owner's set at their request;
+  each mapping should be confirmed by the owner once):
+  - Burgers: `e7127081` → Classic Chicken, `d9e4a3c8` → Nashville Hot,
+    `ae7eee2d` → Classic Veg, `024824e0` → Bunless Burger.
+  - Fries: `2d5ccc39` → Island Chicken, `795bafa7` → Cheesy Jalapeno.
+  - Wings: `menu/wings-nashville.jpg` → Hot Nashville Wings & Tenders,
+    `menu/wings-korean-bbq.jpg` → Korean BBQ Wings & Tenders.
+  - Fried chicken: `6e25153b` → 2pc Tenders, `c59f09ae` → 4pc Tenders,
+    `1c9f95f6` → 2pc Wings, `d6284f56` → 2pc Drumsticks.
+  - Popcorn: `5d77cee5` → Classic and Signature Dust (the frame shows both).
+  - Meal boxes: `256b8273` → Friendship, `02580bac` → Triple Treat;
+    the existing box photos keep Solid Treat / All Drumsticks /
+    Loaded Fries / Ultimate.
+  - Drinks: `a0281059` → Blue Curacao, `d6baeaa1` → Virgin Mojito,
+    `02ce61f6` → Pink Grapefruit, `d0d759d2` → Lotus Biscoff Frappe,
+    `1846b559` → Blueberry Cheesecake Frappe.
+  - The scoops cards (`gallery/ice-cream-*`) left the menu data — the biscoff
+    and blueberry frappés now show real frappé frames from the owner's set.
+- **Generated illustrations** (`DishArt`, `src/components/menu/DishArt.tsx`):
+  flavour variants whose look cannot be verified from a photo — Korean BBQ /
+  Signature burgers, Tandoori Paneer, Spicy Garlic / Ghost Pepper fries,
+  both nachos, Chizza, the three remaining wing flavours, plain and
+  peri-peri fries, 1pc drumstick, Big 8 Box, dips, add-ons, sodas, water,
+  cucumber mocktail, caramel frappe — get a line-art tile in brand ink and
+  accent. The detail page captions it "Illustration for the demo — the
+  owner's photograph for this dish is still owed", so nothing is passed off
+  as a photograph.
+
 ## The DriftWall selection ("food only")
 
 The drifting wall (`src/components/reactbits/DriftWall.jsx`, used by

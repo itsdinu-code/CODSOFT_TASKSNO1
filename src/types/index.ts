@@ -77,6 +77,27 @@ export interface MenuItem {
   categoryId: CategoryId;
   description?: string;
   imageUrl?: string;
+  /**
+   * Generated illustration kind, used when no photograph of the dish exists
+   * (see `DishArt`). Never used to stand in for a photo of another dish.
+   */
+  art?:
+    | "burger"
+    | "patty"
+    | "fries"
+    | "loaded-fries"
+    | "nachos"
+    | "wings"
+    | "drum"
+    | "tenders"
+    | "popcorn"
+    | "box"
+    | "bites"
+    | "dip"
+    | "drink"
+    | "bottle"
+    | "frappe"
+    | "chizza";
   /** null = price not established (campaign or awaiting owner confirmation). */
   pricePaise: number | null;
   currency: Currency;

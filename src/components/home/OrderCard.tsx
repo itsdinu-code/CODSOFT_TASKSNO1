@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { restaurant } from "@/lib/restaurant";
 
 /**
  * "The reply card."
@@ -32,11 +31,8 @@ export function OrderCard() {
               <Link href="/menu" className="btn btn-ink flex-1">
                 Order online
               </Link>
-              <Link
-                href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
-                className="btn btn-quiet flex-1"
-              >
-                Call {restaurant.phoneDisplay}
+              <Link href="/reserve" className="btn btn-quiet flex-1">
+                Reserve a table
               </Link>
             </div>
             <p className="mt-4 t-small text-muted">Demo — no payment is taken.</p>

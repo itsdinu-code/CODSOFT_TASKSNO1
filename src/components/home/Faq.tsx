@@ -17,7 +17,7 @@ const QUESTIONS = [
     topic: "Dining in",
     question: "Can I eat inside?",
     answer:
-      "Yes. The Red Dragon launch poster lists 'dining', so there is seating. Table service, table booking and QR ordering have not been set up, and this site does not take reservations.",
+      "Yes. The Red Dragon launch poster lists 'dining', so there is seating. Table service, table booking and QR ordering have not been set up yet — you can leave a table request on the Reserve page in this demo build, and the counter confirms real tables by phone.",
   },
   {
     topic: "Hours",

@@ -9,6 +9,7 @@ import { useCart } from "@/lib/store/cart";
 const LINKS = [
   { href: "/menu", label: "Menu" },
   { href: "/combos", label: "Meal boxes" },
+  { href: "/reserve", label: "Reserve a table" },
   { href: "/about", label: "Our story" },
   { href: "/gallery", label: "The shop" },
   { href: "/contact", label: "Find us" },
@@ -146,7 +147,7 @@ export function SiteHeader() {
                 Order online
               </Link>
               <p className="mt-4 t-body text-muted">
-                Prototype build. Orders are simulated and never reach the kitchen.
+                Demo — orders are simulated.
               </p>
             </div>
           </nav>

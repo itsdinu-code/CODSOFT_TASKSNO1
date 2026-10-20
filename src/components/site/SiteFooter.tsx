@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChickadysLogo } from "@/components/brand/ChickadysLogo";
 import { IntroReplay } from "@/components/site/IntroReplay";
-import { restaurant, fullAddress } from "@/lib/restaurant";
+import { restaurant } from "@/lib/restaurant";
 
 /** Kept as a constant so the footer can be prerendered without reading a clock. */
 const COPYRIGHT_YEAR = 2026;
@@ -80,6 +80,11 @@ export function SiteFooter() {
         <div className="wrap mt-12 border-t-2 border-ink/15 pt-6">
           <ul className="flex flex-wrap gap-x-6 gap-y-2 t-body">
             <li>
+              <Link href="/reserve" className="text-ink-2 hover:text-accent-deep">
+                Reserve a table
+              </Link>
+            </li>
+            <li>
               <Link href="/faq" className="text-ink-2 hover:text-accent-deep">
                 FAQ
               </Link>
@@ -109,10 +114,7 @@ export function SiteFooter() {
             </li>
           </ul>
           <p className="mt-5 t-body text-muted">
-          © {COPYRIGHT_YEAR} Chickady&rsquo;s. {fullAddress}. A prototype for
-          the restaurant — no orders are sent and no payment is taken;
-          address, hours and phone come from public listings, pending the
-          owner&rsquo;s confirmation.
+          © {COPYRIGHT_YEAR} Chickady&rsquo;s.
         </p>
         </div>
       </div>
