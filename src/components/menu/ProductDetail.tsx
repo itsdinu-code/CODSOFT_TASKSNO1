@@ -6,6 +6,7 @@ import { useCart } from "@/lib/store/cart";
 import { formatRupees } from "@/lib/format";
 import { unitPriceFor } from "@/lib/pricing";
 import { categoryById } from "@/lib/menu/queries";
+import { CraveButton } from "./CraveButton";
 import type { MenuItem } from "@/types";
 
 /**
@@ -244,6 +245,10 @@ export function ProductDetail({ item }: { item: MenuItem }) {
           >
             Go to the cart
           </Link>
+        </div>
+
+        <div className="mt-5">
+          <CraveButton itemId={item.id} itemName={item.name} />
         </div>
       </div>
     </div>

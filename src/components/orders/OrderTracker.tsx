@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useOrders } from "@/lib/store/orders";
 import { STATUS_LABEL, TRACKING_STEPS } from "@/lib/orders/state";
 import { formatRupees, formatTime, formatDateTime } from "@/lib/format";
+import { OrderDemoRating } from "./OrderDemoRating";
 import type { OrderStatus } from "@/types";
 
 const TONE: Record<OrderStatus, string> = {
@@ -145,6 +146,7 @@ export function OrderTracker({ code }: { code: string }) {
             Tracking is simulated. This order was never sent to the restaurant
             and will not appear on the kitchen display for a real customer.
           </p>
+          {order.status === "completed" ? <OrderDemoRating code={order.code} /> : null}
           <Link href="/menu" className="btn btn-ink mt-5 w-full">
             Order something else
           </Link>

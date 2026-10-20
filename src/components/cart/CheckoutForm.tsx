@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useCart } from "@/lib/store/cart";
 import { useOrders } from "@/lib/store/orders";
 import { formatRupees } from "@/lib/format";
+import ClickSpark from "@/components/reactbits/ClickSpark";
 import type { FulfilmentType, Order } from "@/types";
 
 const FULFILMENT: { id: FulfilmentType; label: string; note: string }[] = [
@@ -235,9 +236,21 @@ export function CheckoutForm() {
             </p>
           ) : null}
 
-          <button type="submit" className="btn mt-5 w-full" disabled={busy}>
-            {busy ? "Placing…" : "Place the simulated order"}
-          </button>
+          <ClickSpark
+            sparkColor={["#f4510b", "#ffc45c", "#e51b23"]}
+            shape="streak"
+            sparkCount={12}
+            sparkSize={12}
+            sparkRadius={42}
+            duration={560}
+            glow={0.25}
+            ring
+            style={{ width: "100%" }}
+          >
+            <button type="submit" className="btn mt-5 w-full" disabled={busy}>
+              {busy ? "Placing…" : "Place the simulated order"}
+            </button>
+          </ClickSpark>
           <p className="mt-3 t-body text-muted">
             This is a prototype. The order is stored in this browser only, it
             is not sent to the restaurant, and no payment is taken. Do not

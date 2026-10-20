@@ -1,16 +1,19 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
+import { TypeBand } from "@/components/home/TypeBand";
 import { Intro } from "@/components/home/Intro";
 import { MenuSheet } from "@/components/home/MenuSheet";
 import { Campaigns } from "@/components/home/Campaigns";
 import { ComboSlips } from "@/components/home/ComboSlips";
 import { Combos } from "@/components/home/Combos";
+import { DriftBoard } from "@/components/home/DriftBoard";
 import { Gallery } from "@/components/home/Gallery";
 import { Reviews } from "@/components/home/Reviews";
 import { Directions } from "@/components/home/Directions";
 import { Faq } from "@/components/home/Faq";
 import { OrderCard } from "@/components/home/OrderCard";
+import { BrandIntro } from "@/components/brand/BrandIntro";
 
 export const metadata: Metadata = {
   title: "Chickady's — fried chicken, burgers and loaded fries, Alappakkam Chennai",
@@ -37,6 +40,7 @@ function CampaignsFallback() {
 export default function HomePage() {  return (
     <>
       <Hero />
+      <TypeBand />
       <Intro />
       <MenuSheet />
       <Suspense fallback={<CampaignsFallback />}>
@@ -44,11 +48,13 @@ export default function HomePage() {  return (
       </Suspense>
       <ComboSlips />
       <Combos />
+      <DriftBoard />
       <Gallery />
       <Reviews />
       <Directions />
       <Faq />
       <OrderCard />
+      <BrandIntro />
     </>
   );
 }

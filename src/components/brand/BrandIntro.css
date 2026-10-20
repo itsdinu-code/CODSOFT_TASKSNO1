@@ -1,0 +1,316 @@
+/* ==========================================================================
+   BrandIntro — the Chickady's ident.
+   Palette is taken from the site tokens (globals.css), which match the
+   owner's published badge artwork:
+     room      #f4510b  →  #c43c08   (site accent / accent-deep)
+     cream     #fff6e6              (site cream)
+     golden    #ffc45c              (brand golden crumb accent)
+     shadow    #35150e              (deep warm shadow)
+   Every scene delay is a custom property below, so timing stays tunable.
+   ========================================================================== */
+
+.brand-intro {
+  --bi-room-a: #f4510b;
+  --bi-room-b: #c43c08;
+  --bi-room-c: #e94b2c;
+  --bi-cream: #fff6e6;
+  --bi-gold: #ffc45c;
+  --bi-shadow: #35150e;
+
+  --bi-t-bloom: 1.15s;
+  --bi-t-gather: 0.95s;
+  --bi-t-trace: 2s;
+  --bi-t-logo: 3s;
+  --bi-t-sweep: 3.55s;
+  --bi-t-burst: 3.95s;
+  --bi-t-hold: 5.2s;
+  --bi-t-fade: 6.35s;
+
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: var(--bi-shadow);
+  overflow: hidden;
+  opacity: 1;
+  animation: bi-overlay-out 480ms cubic-bezier(0.4, 0, 0.2, 1) var(--bi-t-fade) forwards;
+}
+
+.brand-intro-lock {
+  overflow: hidden !important;
+}
+
+/* The room: a warm gradient floor with a slow lamp-breath. */
+.brand-intro__room {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 50% 38%, var(--bi-room-c) 0%, var(--bi-room-a) 46%, var(--bi-room-b) 100%);
+  animation: bi-room-in 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.brand-intro__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(105% 82% at 50% 45%, transparent 52%, rgba(53, 21, 14, 0.55) 100%);
+  pointer-events: none;
+}
+
+/* Fine film grain — a tiny turbulence tile, blended lightly. */
+.brand-intro__grain {
+  position: absolute;
+  inset: -50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  animation: bi-grain 1.1s steps(2) infinite;
+}
+
+/* The crumbs that gather on the bloom. */
+.brand-intro__crumbs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.brand-intro__crumb {
+  position: absolute;
+  inline-size: var(--cd-c-size);
+  block-size: var(--cd-c-size);
+  border-radius: 52% 48% 55% 45%;
+  background: var(--bi-gold);
+  box-shadow: 0 0 6px 1px rgba(255, 196, 92, 0.55);
+  filter: blur(var(--cd-c-blur, 0px));
+  opacity: 0;
+}
+
+.brand-intro__crumbs--gather .brand-intro__crumb {
+  animation:
+    bi-crumb-in 620ms ease-out var(--cd-c-delay) forwards,
+    bi-crumb-gather 1.05s cubic-bezier(0.3, 0.9, 0.3, 1) calc(var(--bi-t-gather) + var(--cd-c-delay)) forwards;
+}
+
+.brand-intro__crumbs--burst .brand-intro__crumb {
+  /* The burst field mounts resting on the logo, then blows outward at impact. */
+  background: var(--bi-gold);
+  opacity: 0;
+  animation:
+    bi-crumb-in 200ms ease-out var(--bi-t-burst) forwards,
+    bi-crumb-burst 950ms cubic-bezier(0.16, 0.84, 0.44, 1) calc(var(--bi-t-burst) + var(--cd-c-delay) * 0.4) forwards;
+}
+
+/* Warm bloom behind the badge position. */
+.brand-intro__bloom {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  inline-size: min(72vmin, 640px);
+  block-size: min(72vmin, 640px);
+  background: radial-gradient(circle, rgba(255, 246, 230, 0.5) 0%, rgba(255, 196, 92, 0.28) 34%, transparent 68%);
+  filter: blur(6px);
+  opacity: 0;
+  animation: bi-bloom 1.5s cubic-bezier(0.22, 1, 0.36, 1) var(--bi-t-bloom) forwards;
+}
+
+/* Camera-style push-in on the whole stage. */
+.brand-intro__stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  will-change: transform;
+  animation: bi-push 2.4s cubic-bezier(0.22, 0.84, 0.36, 1) var(--bi-t-burst) forwards;
+}
+
+.brand-intro__logo {
+  position: relative;
+  inline-size: min(58vmin, 460px);
+  display: block;
+}
+
+.brand-intro__badge {
+  inline-size: 100%;
+  block-size: auto;
+  display: block;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation:
+    bi-logo-in 780ms cubic-bezier(0.22, 1.18, 0.36, 1) var(--bi-t-logo) forwards,
+    bi-logo-settle 520ms cubic-bezier(0.22, 1, 0.36, 1) var(--bi-t-hold) forwards;
+  filter: drop-shadow(0 22px 44px rgba(53, 21, 14, 0.5));
+}
+
+/* The cream light sweep, clipped to the badge artwork. */
+.brand-intro__sweep {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 34%,
+    rgba(255, 246, 230, 0.85) 47%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(255, 246, 230, 0.85) 53%,
+    transparent 66%
+  );
+  -webkit-mask-image: url("/brand/chickadys-badge.png");
+  mask-image: url("/brand/chickadys-badge.png");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  opacity: 0;
+  pointer-events: none;
+  animation: bi-sweep 720ms cubic-bezier(0.4, 0, 0.2, 1) var(--bi-t-sweep) both;
+}
+
+/* The self-drawing border trace. */
+.brand-intro__trace {
+  position: absolute;
+  inset: -1.5%;
+  inline-size: 103%;
+  block-size: 103%;
+  stroke: var(--bi-cream);
+  stroke-width: 2.6;
+  fill: none;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 8px rgba(255, 246, 230, 0.45));
+  pointer-events: none;
+}
+
+.brand-intro__trace rect {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: bi-trace 1s cubic-bezier(0.5, 0, 0.2, 1) var(--bi-t-trace) forwards;
+}
+
+.brand-intro__skip {
+  position: absolute;
+  right: clamp(0.75rem, 2vw, 1.5rem);
+  bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+  padding: 0.55rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(53, 21, 14, 0.35);
+  color: var(--bi-cream);
+  font: inherit;
+  inline-size: max-content;
+  cursor: pointer;
+  opacity: 0;
+  animation: bi-skip-in 400ms ease 1.2s forwards;
+}
+
+.brand-intro__skip:hover,
+.brand-intro__skip:focus-visible {
+  background: rgba(53, 21, 14, 0.6);
+  outline: 2px solid var(--bi-cream);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+/* ---- keyframes ---------------------------------------------------------- */
+
+@keyframes bi-room-in {
+  from { opacity: 0; transform: scale(1.06); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bi-grain {
+  0% { transform: translate3d(0, 0, 0); }
+  25% { transform: translate3d(-3%, 2%, 0); }
+  50% { transform: translate3d(2%, -3%, 0); }
+  75% { transform: translate3d(-2%, -2%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes bi-crumb-in {
+  from { opacity: 0; }
+  to { opacity: 0.85; }
+}
+
+@keyframes bi-crumb-gather {
+  0% { translate: 0 0; opacity: 0.85; }
+  100% { translate: var(--cd-c-tx) var(--cd-c-ty); opacity: 0.7; }
+}
+
+@keyframes bi-crumb-burst {
+  0% { translate: 0 0; opacity: 0.9; }
+  70% { opacity: 0.85; }
+  100% { translate: var(--cd-c-bx) var(--cd-c-by); opacity: 0; }
+}
+
+@keyframes bi-bloom {
+  from { opacity: 0; transform: scale(0.7); }
+  55% { opacity: 1; }
+  to { opacity: 0.92; transform: scale(1); }
+}
+
+@keyframes bi-trace {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes bi-logo-in {
+  from { opacity: 0; transform: scale(1.07) translateY(9px); }
+  60% { opacity: 1; }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes bi-logo-settle {
+  0% { transform: scale(1); }
+  38% { transform: scale(1.045); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bi-sweep {
+  0% { opacity: 0; transform: translateX(-110%); }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(110%); }
+}
+
+@keyframes bi-skip-in {
+  to { opacity: 1; }
+}
+
+@keyframes bi-push {
+  from { transform: scale(0.985); }
+  to { transform: scale(1.05); }
+}
+
+@keyframes bi-overlay-out {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+/* ---- reduced motion: the calm version ----------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro {
+    animation-duration: 2.4s;
+    animation-delay: 0.9s;
+  }
+
+  .brand-intro__room,
+  .brand-intro__bloom,
+  .brand-intro__stage {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .brand-intro__bloom {
+    opacity: 0.6;
+  }
+
+  .brand-intro__crumbs,
+  .brand-intro__sweep,
+  .brand-intro__trace {
+    display: none;
+  }
+
+  .brand-intro__badge {
+    animation: bi-logo-in 600ms ease both;
+  }
+}

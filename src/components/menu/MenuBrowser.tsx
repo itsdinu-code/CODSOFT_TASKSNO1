@@ -3,12 +3,33 @@
 import { useMemo, useState } from "react";
 import { categories, queryMenu } from "@/lib/menu/queries";
 import { ProductTile } from "./ProductTile";
+import GooeyNav from "@/components/reactbits/GooeyNav";
 import type { CategoryId } from "@/types";
 
 /**
  * The menu browser: search by name, filter by category, and show what the
  * board actually says, including the lines that are sold out.
+ *
+ * The category filter is the gooey navigation — the active pill melts from
+ * one section to the next. The set of rails is the printed board's own
+ * sections, nothing is added.
  */
+
+const GOOEY_ITEMS = [
+  { label: "Everything" },
+  ...categories.map((c) => ({ label: c.name })),
+];
+
+function indexOfCategory(category: CategoryId | "all"): number {
+  if (category === "all") return 0;
+  const index = categories.findIndex((c) => c.id === category);
+  return index < 0 ? 0 : index + 1;
+}
+
+function categoryOfIndex(index: number): CategoryId | "all" {
+  return index === 0 ? "all" : (categories[index - 1]?.id ?? "all");
+}
+
 export function MenuBrowser({ initialCategory }: { initialCategory?: CategoryId }) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<CategoryId | "all">(initialCategory ?? "all");
@@ -50,40 +71,25 @@ export function MenuBrowser({ initialCategory }: { initialCategory?: CategoryId 
             />
           </div>
 
-          <nav aria-label="Menu categories">
-            <ul className="no-scrollbar flex gap-2 overflow-x-auto">
-              <li>
-                <button
-                  type="button"
-                  onClick={() => setCategory("all")}
-                  aria-pressed={category === "all"}
-                  className={`h-9 shrink-0 rounded-full px-4 t-body font-medium transition-colors ${
-                    category === "all"
-                      ? "bg-ink text-cream"
-                      : "bg-paper-2 text-ink hover:bg-accent hover:text-ink"
-                  }`}
-                >
-                  Everything
-                </button>
-              </li>
-              {categories.map((c) => (
-                <li key={c.id}>
-                  <button
-                    type="button"
-                    onClick={() => setCategory(c.id)}
-                    aria-pressed={category === c.id}
-                    className={`h-9 shrink-0 rounded-full px-4 t-body font-medium transition-colors ${
-                      category === c.id
-                        ? "bg-ink text-cream"
-                        : "bg-paper-2 text-ink hover:bg-accent hover:text-ink"
-                    }`}
-                  >
-                    {c.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <GooeyNav
+            items={GOOEY_ITEMS}
+            activeIndex={indexOfCategory(category)}
+            onChange={(index) => setCategory(categoryOfIndex(index))}
+            theme="light"
+            color="#171310"
+            activeTextColor="#fff6e6"
+            colors={["#f4510b", "#ffc45c"]}
+            size="md"
+            frame
+            particleCount={14}
+            spread={52}
+            animationTime={560}
+            timeVariance={260}
+            gooeyness={0.5}
+            wobble={0.55}
+            hoverEffect
+            ariaLabel="Menu categories"
+          />
         </div>
       </div>
 

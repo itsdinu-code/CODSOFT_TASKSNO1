@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { connection } from "next/server";
 import { getCampaigns } from "@/lib/campaigns";
+import { CampaignBell } from "./CampaignBell";
 
 /**
  * The campaign carousel.
@@ -58,6 +59,9 @@ export async function Campaigns() {
                 <p className="mt-3 t-body font-medium text-accent-deep">
                   Price and availability to be confirmed.
                 </p>
+              ) : null}
+              {campaign.needsVerification ? (
+                <CampaignBell campaignId={campaign.id} headline={campaign.headline} />
               ) : null}
               {campaign.ctaHref ? (
                 <Link

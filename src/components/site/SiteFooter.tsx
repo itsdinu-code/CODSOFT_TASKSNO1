@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChickadysLogo } from "@/components/brand/ChickadysLogo";
+import { IntroReplay } from "@/components/site/IntroReplay";
 import { restaurant, fullAddress } from "@/lib/restaurant";
 
 /** Kept as a constant so the footer can be prerendered without reading a clock. */
@@ -102,6 +103,9 @@ export function SiteFooter() {
               <Link href="/accessibility" className="text-ink-2 hover:text-accent-deep">
                 Accessibility
               </Link>
+            </li>
+            <li>
+              <IntroReplay className="text-ink-2 hover:text-accent-deep data-[playing]:opacity-50" />
             </li>
           </ul>
           <p className="mt-5 t-body text-muted">
