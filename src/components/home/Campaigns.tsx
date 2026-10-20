@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { connection } from "next/server";
 import { getCampaigns } from "@/lib/campaigns";
+import { getInstagramProfile } from "@/lib/instagram";
 import { CampaignBell } from "./CampaignBell";
 
 /**
@@ -13,6 +14,12 @@ import { CampaignBell } from "./CampaignBell";
 export async function Campaigns() {
   await connection();
   const campaigns = getCampaigns();
+  const live = await getInstagramProfile();
+  const pulledAt = live
+    ? new Intl.DateTimeFormat("en-IN", { hour: "2-digit", minute: "2-digit", hour12: false }).format(
+        new Date(live.fetchedAt),
+      )
+    : null;
 
   return (
     <section className="field-paper2 section">
@@ -28,6 +35,30 @@ export async function Campaigns() {
           </p>
         </div>
       </div>
+
+      {live ? (
+        <div className="wrap mt-3">
+          <p className="t-small text-muted">
+            <span className="inline-block h-2 w-2 translate-y-[-1px] rounded-full bg-[#dd2a7b]" />{" "}
+            {live.source === "live" ? "Pulled live" : "Last pull"}{" "}
+            {live.source === "live"
+              ? `at ${pulledAt} `
+              : `${new Intl.DateTimeFormat("en-IN", { dateStyle: "long" }).format(new Date(live.fetchedAt))} `}{" "}
+            from{" "}
+            <a
+              href="https://www.instagram.com/chickadys"
+              target="_blank"
+              rel="noreferrer"
+              className="underline decoration-2 underline-offset-4 hover:text-accent-deep"
+            >
+              @chickadys
+            </a>
+            {live.posts !== null ? ` · ${live.posts} posts up now` : ""}
+            {live.followers !== null ? ` · ${live.followers} followers` : ""}
+            {live.latestCaption ? ` · latest note: “${live.latestCaption}”` : ""}.
+          </p>
+        </div>
+      ) : null}
 
       <div className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-[var(--margin)] pb-2">
         {campaigns.map((campaign) => (

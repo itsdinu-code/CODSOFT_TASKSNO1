@@ -11,6 +11,66 @@ import type { Campaign } from "@/types";
 
 const campaigns: Campaign[] = [
   {
+    id: "bunless-launch",
+    name: "Bunless Burger launch",
+    slug: "bunless-burger-launch",
+    kind: "launch",
+    artwork: "/campaigns/campaign-bunless-launch.jpg",
+    artworkAlt:
+      "Chickady's launch poster for the Bunless Burger: two crispy chicken fillets with lettuce, onion and the house sauce, reading “Introducing — No Bun. No Rules. All Chicken.”",
+    headline: "Bunless Burger — no bun, no rules",
+    body:
+      "The owner's launch poster from Instagram. The Burger is printed on the exclusives board at ₹289, so it can be ordered below.",
+    ctaLabel: "Order the Bunless Burger",
+    ctaHref: "/menu/bunless-burger",
+    startsAt: null,
+    endsAt: null,
+    isActive: true,
+    needsVerification: false,
+    theme: "black-red",
+    linkedItemIds: ["exclusives-bunless-burger"],
+  },
+  {
+    id: "wings-20-combo",
+    name: "20 pcs flavoured wings combo",
+    slug: "wings-20-combo",
+    kind: "banner",
+    artwork: "/campaigns/campaign-wings-20-combo.jpg",
+    artworkAlt:
+      "Chickady's combo poster: twenty flavoured wings for ₹599, boxed in five flavours — Tokyo Sweet Chilli, Hot Buffalo, California Lemon Pepper, Jamaica Jerk and Texas Smoked BBQ.",
+    headline: "20 flavoured wings — ₹599",
+    body:
+      "“Biggest combo ever”, says the owner's own post: twenty wings, five flavours — Tokyo Sweet Chilli, Hot Buffalo, California Lemon Pepper, Jamaica Jerk and Texas Smoked BBQ. Order by phone, since the combo is not a board line.",
+    ctaLabel: "Phone the combo through",
+    ctaHref: "/contact",
+    startsAt: null,
+    endsAt: null,
+    isActive: true,
+    needsVerification: false,
+    theme: "orange",
+    linkedItemIds: [],
+  },
+  {
+    id: "strips-12-weekend",
+    name: "12 pcs strips weekend offer",
+    slug: "strips-12-weekend",
+    kind: "banner",
+    artwork: "/campaigns/campaign-strips-12-weekend.jpg",
+    artworkAlt:
+      "Chickady's weekend-offer poster: twelve strips for ₹379 with two free dips, “Upto 40% off”, in an orange Chickady's bucket. Halal certified.",
+    headline: "Weekend: 12 strips, 2 dips — ₹379",
+    body:
+      "The weekend offer from the owner's own page: twelve strips at ₹379, two dips on the house, “up to 40% off”, with the halal mark printed. Or try the tenders from the board below.",
+    ctaLabel: "See the tenders",
+    ctaHref: "/menu/fried-chicken-2pc-tenders",
+    startsAt: null,
+    endsAt: null,
+    isActive: true,
+    needsVerification: false,
+    theme: "orange",
+    linkedItemIds: [],
+  },
+  {
     id: "red-dragon",
     name: "Red Dragon Burger",
     slug: "red-dragon",

@@ -1,0 +1,11 @@
+{
+  "pulledAt": "2026-10-20T18:13:00+05:30",
+  "handle": "chickadys",
+  "profileUrl": "https://www.instagram.com/chickadys",
+  "followers": 115,
+  "following": 9,
+  "posts": 11,
+  "bio": "Chickady's — Tender Bite, Feels Right! #burger | #friedchicken | #burrito | #fries | #icecream",
+  "latestCaption": "Tender Bite, Feels Right!",
+  "provenance": "Read from the public profile page on 20 October 2026 by a rendered fetch of instagram.com/chickadys (the counts and caption Instagram publishes to logged-out visitors). Captions of older posts are not served logged-out, so this lists only what the pull could see. Refresh with: npm run sync:instagram."
+}
