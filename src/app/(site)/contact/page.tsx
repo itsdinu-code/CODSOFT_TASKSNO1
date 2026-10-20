@@ -27,6 +27,13 @@ export default function ContactPage() {
             >
               {restaurant.phone}
             </a>
+            {" · "}
+            <a
+              href={`mailto:${restaurant.email}`}
+              className="underline underline-offset-4 hover:text-accent-deep"
+            >
+              {restaurant.email}
+            </a>
           </p>
           <a
             href={restaurant.mapsUrl}
@@ -89,10 +96,13 @@ export default function ContactPage() {
 
         <ProseSection title="What this site cannot do yet">
           <p>
-            There is no table booking, no reservation request and no order
-            status pushed to a phone, because none of those are confirmed as
-            services the shop offers. If you need to arrange something
-            unusual, phone the shop.
+            There is no confirmed booking channel — requests left on the{" "}
+            <Link href="/reserve" className="underline underline-offset-4 hover:text-accent-deep">
+              Reserve page
+            </Link>{" "}
+            stay in the demo build and reach no one — and no order status is
+            pushed to a phone. For a confirmed table or anything unusual,
+            phone the shop.
           </p>
           <p>
             <Link href="/faq" className="underline underline-offset-4 hover:text-accent-deep">

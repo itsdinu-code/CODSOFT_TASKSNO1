@@ -18,11 +18,11 @@ recorded and traceable. **Blocked** — something else has to happen first.
 | 1.3 | Address and unit number | Zomato listing: "650/19B1, 150 Feet By-pass Road, Vairam Complex, Alapakkam, Tambaram Municipality, Kancheepuram, Perungalathur, Chennai 600063" | Is the unit 19B or 19B1? Which locality spelling is correct on a signboard? | Open |
 | 1.4 | Map pin | Owner-supplied link: <https://maps.app.goo.gl/tuLZvW7yhxq4CFYf7> (pin at 12.8966, 80.1107) | Does the pin land on the shop door? | Source |
 | 1.5 | Phone | Zomato listing: +91 99405 26698 | Is this the number that customers should call, and whose number is it? | Open |
-| 1.6 | Support email | None found | A named address for data requests and complaints. | Open |
+| 1.6 | Support email | Owner-supplied 20 Oct 2026: `chickadys.help@gmail.com` | Confirm this is monitored for customer and data requests. | Owner confirmed |
 | 1.7 | FSSAI licence | Not supplied | The licence number must be displayed at the outlet and on invoices. | Open |
 | 1.8 | Official logo files | Extracted from the owner's own published posts: `public/brand/chickadys-wordmark.png` and `chickadys-badge.png` | Are these the current marks? Please supply the vector originals (SVG or PDF) and the exact hex values for the orange and the black. | Open |
 | 1.9 | Brand colours and type | Sampled from the printed boards and the published posters. The wordmark's cream is #FFFAF3, the yellow #FFCF2E, the poster orange #F4510B | Are the official values the same? The site uses #F4510B for the accent and #FFF1D4 for the cream ground. | Open |
-| 1.10 | Social accounts | Only the Zomato, Swiggy and Google Maps listings were found | Instagram, Facebook, WhatsApp Business. | Open |
+| 1.10 | Social accounts | Owner-supplied 20 Oct 2026: Instagram `@chickadys` (`https://www.instagram.com/chickadys`). Zomato, Swiggy and Google Maps listings held. | Is Instagram the shop's own account? Facebook, WhatsApp Business still not confirmed. | Owner confirmed (Instagram) |
 
 ## 2. Menu
 

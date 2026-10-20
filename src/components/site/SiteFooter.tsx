@@ -114,7 +114,13 @@ export function SiteFooter() {
             </li>
           </ul>
           <p className="mt-5 t-body text-muted">
-          © {COPYRIGHT_YEAR} Chickady&rsquo;s.
+          © {COPYRIGHT_YEAR} Chickady&rsquo;s ·{" "}
+          <a
+            href={`mailto:${restaurant.email}`}
+            className="text-muted underline underline-offset-4 hover:text-ink"
+          >
+            {restaurant.email}
+          </a>
         </p>
         </div>
       </div>

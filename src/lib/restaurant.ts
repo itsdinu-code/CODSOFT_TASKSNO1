@@ -40,11 +40,12 @@ export const restaurant = {
   fssaiNote:
     "FSSAI licence number was not supplied. A restaurant licence must be displayed at the outlet and on invoices as required.",
 
-  email: null as string | null,
-  emailNote:
-    "No public email address was found on any listing. A support address should be set before launch.",
+  /** Owner-supplied email, 2026-10-20. */
+  email: "chickadys.help@gmail.com" as string | null,
 
   social: [
+    /** Owner-supplied Instagram handle, 2026-10-20. */
+    { label: "Instagram", url: "https://www.instagram.com/chickadys" },
     { label: "Zomato", url: "https://www.zomato.com/chennai/chickadys-perungalathur" },
     {
       label: "Swiggy",
