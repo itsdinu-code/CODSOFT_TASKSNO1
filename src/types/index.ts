@@ -164,8 +164,10 @@ export interface Campaign {
   name: string;
   slug: string;
   kind: "hero" | "banner" | "launch" | "seasonal";
-  artwork: string;
-  artworkAlt: string;
+  artwork?: string;
+  artworkAlt?: string;
+  /** Typed panel shown instead of artwork when the campaign's poster artwork is not used on the public site. */
+  poster?: { eyebrow: string; title: string; note: string; };
   headline: string;
   body: string;
   ctaLabel?: string;

@@ -22,8 +22,9 @@ export async function Campaigns() {
             What the kitchen is pushing
           </h2>
           <p className="reveal col-span-12 text-ink-2 lg:col-span-5 lg:col-start-8">
-            Every card here is artwork the restaurant published itself. Nothing
-            is running that the shop has not announced.
+            Every card here comes from the restaurant&rsquo;s own announcements
+            and its own photographs. Nothing is running that the shop has not
+            announced.
           </p>
         </div>
       </div>
@@ -36,17 +37,31 @@ export async function Campaigns() {
           >
             <div
               className={`flex h-[240px] items-center justify-center overflow-hidden ${
-                campaign.theme === "black-red" ? "bg-black" : "bg-accent"
+                campaign.theme === "black-red" ? "bg-black" : campaign.theme === "cream" ? "bg-paper" : "bg-accent"
               }`}
             >
-                            <img
-                src={campaign.artwork}
-                alt={campaign.artworkAlt}
-                width={campaign.theme === "black-red" ? 684 : 400}
-                height={campaign.theme === "black-red" ? 212 : 400}
-                loading="lazy"
-                className="h-full w-full object-contain"
-              />
+              {campaign.artwork ? (
+                <img
+                  src={campaign.artwork}
+                  alt={campaign.artworkAlt ?? campaign.headline}
+                  width={campaign.theme === "black-red" ? 684 : 400}
+                  height={campaign.theme === "black-red" ? 212 : 400}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              ) : campaign.poster ? (
+                <div className="flex h-full w-full flex-col items-center justify-center gap-3 px-8 text-center text-cream">
+                  <span className="t-small uppercase tracking-[0.35em] opacity-75">
+                    {campaign.poster.eyebrow}
+                  </span>
+                  <span
+                    className={`display-wide t-display ${campaign.theme === "black-red" ? "text-red" : "text-cream"}`}
+                  >
+                    {campaign.poster.title}
+                  </span>
+                  <span className="t-small opacity-75">{campaign.poster.note}</span>
+                </div>
+              ) : null}
             </div>
             <div className="p-5">
               <h3 className="display-wide t-lead text-ink">

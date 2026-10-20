@@ -82,13 +82,13 @@ the menu/hero imagery (not the drift wall).
 
 | File | Subject | Held / needed |
 |---|---|---|
-| `campaign-red-dragon.jpg` | The Red Dragon launch poster (black/red) | Held — owner post |
-| `campaign-open-late.jpg` | "WE'RE OPEN, till night 12" card | Held — owner post |
+| `campaign-red-dragon.jpg` | The Red Dragon launch poster (black/red) | Held — owner post; **retired from the home carousel 20 Oct 2026** (the owner asked the poster cards off) — the campaign now shows a typed black/red panel built from the poster's own words |
+| `campaign-open-late.jpg` | "WE'RE OPEN, till night 12" card | Held — owner post; **retired from the home carousel 20 Oct 2026** — same treatment: a typed accent panel with the card's own wording |
 | `campaign-saucy-wings.jpg` | Saucy wings campaign card | Held — owner post |
 | `board-fried-chicken.jpg` | The counter board, photographed | Held |
 | `fried-row.jpg` | A row of the red fried-chicken boxes | Held |
-| `gallery/ice-cream-vanilla.jpg` | Vanilla scoop from the "scoops are back" card | Held — owner post |
-| `gallery/ice-cream-chocolate.jpg` | Chocolate scoop, same card | Held — owner post |
+| `gallery/ice-cream-vanilla.jpg` | Vanilla scoop from the "scoops are back" card | Held — owner post; retired from the carousel |
+| `gallery/ice-cream-chocolate.jpg` | Chocolate scoop, same card | Held — owner post; **retired from the home carousel 20 Oct 2026** — the "scoops are back" card now shows `/food/8100c805-4d74-408e-9424-e2ac096c9115.jpg` (Lotus-biscoff scoops, from the owner's own set) |
 | `gallery/maps-profile-updates.jpg` | The Google Maps profile screenshot | Held — used only to *document* the listing, never styled as food |
 
 ## The DriftWall selection ("food only")
@@ -107,6 +107,19 @@ Deliberately excluded from the wall, and why:
   `gallery/ice-cream-*`) were **retired from the wall** once the owner's own
   set arrived — their photos still serve the menu/hero/gallery sections.
 - Any shopfront, exterior, counter, seating or kitchen shot —
+
+## Home page, 20 October 2026 — de-duplication notes
+
+- **Only one printed menu board appears on the home page.** The Intro
+  section's board photo was the duplicate of the hero sheet, so the Intro
+  figure now shows the owner's feast photo (`/food/256b8273-…jpg`) with the
+  caption noting the prices are read from the board. The board itself
+  (`/menu/board-menu.jpg`) remains the reference shot for the live data only.
+- The marching ribbon (`TypeBand`) loops continuously (no hover pause) and
+  its SVG band is cropped so the ribbon sits tight against the hero's lower
+  edge instead of floating in dead cream space.
+- The "THE SHOP" shot-list section was removed from the home page (it was a
+  short, half-needed strip). The `/gallery` page and footer link remain.
 
 ## Still owed from the owner
 

@@ -55,17 +55,17 @@ export function Intro() {
           </dl>
         </div>
         <figure className="col-span-12 m-0 lg:col-span-5">
-                    <img
-            src="/menu/board-menu.jpg"
-            alt="Chickady's printed menu board, in orange and cream, listing burgers, loaded fries, nachos, wings, quick bites and fried chicken with prices."
+          <img
+            src="/food/256b8273-d200-4416-b305-180ad3a31508.jpg"
+            alt="The Chickady's fried-chicken feast: crispy pieces, glazed wings and strips with two dips, from the restaurant's own food photographs."
             width={720}
             height={540}
             loading="lazy"
             className="reveal w-full object-cover"
           />
           <figcaption className="mt-3 t-body text-muted">
-            The printed menu board, photographed on 19 October 2026. The prices
-            on this site are read from it.{" "}
+            From Chickady&rsquo;s own food photographs. The prices on this site
+            are read from the printed board, photographed on 19 October 2026.{" "}
             <Link href="/menu" className="underline underline-offset-4 hover:text-accent-deep">
               See every line
             </Link>

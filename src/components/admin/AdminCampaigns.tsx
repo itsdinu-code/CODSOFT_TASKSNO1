@@ -41,11 +41,33 @@ export function AdminCampaigns() {
                 placeItems: "center",
               }}
             >
-              <img
-                src={campaign.artwork}
-                alt={campaign.artworkAlt}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
+              {campaign.artwork ? (
+                <img
+                  src={campaign.artwork}
+                  alt={campaign.artworkAlt ?? campaign.headline}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              ) : (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6,
+                    color: "#fff6e6",
+                    textAlign: "center",
+                    padding: 16,
+                  }}
+                >
+                  <span style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", opacity: 0.75 }}>
+                    {campaign.poster?.eyebrow}
+                  </span>
+                  <span style={{ fontSize: 22, fontWeight: 800 }}>
+                    {campaign.poster?.title ?? campaign.name}
+                  </span>
+                </div>
+              )}
             </div>
             <div style={{ padding: 18 }}>
               <h2 style={{ margin: 0, fontSize: 16, fontWeight: 600 }}>{campaign.name}</h2>

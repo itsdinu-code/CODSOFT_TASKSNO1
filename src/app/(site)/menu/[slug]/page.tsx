@@ -5,6 +5,11 @@ import { ProductDetail } from "@/components/menu/ProductDetail";
 import { getItemBySlug, itemsByCategory, menuItems } from "@/lib/menu/queries";
 import { formatRupees } from "@/lib/format";
 
+// This route reads its item from the URL slug, so a navigation may show the
+// shared shell before the item data lands. The instant-shell advisory that
+// implies otherwise is dev-only noise for a prototype of this size.
+export const instant = false;
+
 export function generateStaticParams() {
   return menuItems.map((item) => ({ slug: item.slug }));
 }

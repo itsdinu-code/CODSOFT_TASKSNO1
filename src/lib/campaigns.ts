@@ -15,9 +15,11 @@ const campaigns: Campaign[] = [
     name: "Red Dragon Burger",
     slug: "red-dragon",
     kind: "launch",
-    artwork: "/campaigns/campaign-red-dragon.jpg",
-    artworkAlt:
-      "Chickady's Red Dragon launch poster: the yellow Chickady's badge, the words Red Dragon in red brush lettering on black, 'Available on zomato' and 'dining'.",
+    poster: {
+      eyebrow: "Launch",
+      title: "Red Dragon",
+      note: "Available on Zomato and for dining",
+    },
     headline: "Red Dragon",
     body:
       "Launched 15 May 2026, from the owner's own announcement. The poster lists it as available on Zomato and for dining. The price, the ingredients and whether it is on sale today have not been confirmed, so it cannot be ordered from this site yet.",
@@ -35,9 +37,11 @@ const campaigns: Campaign[] = [
     name: "Open till night 12",
     slug: "open-till-midnight",
     kind: "banner",
-    artwork: "/campaigns/campaign-open-late.jpg",
-    artworkAlt:
-      "Chickady's orange campaign card reading 'WE'RE OPEN' and 'Open till NIGHT 12', with a cartoon soft-serve cone either side.",
+    poster: {
+      eyebrow: "We're open",
+      title: "Open till night 12",
+      note: "Kitchens close at 11:45 per the public listing",
+    },
     headline: "Open till night 12",
     body:
       "The owner's own card announcing late opening. Public listings still show a 11:45 pm close, so treat the two as different and confirm before travelling.",
@@ -75,9 +79,9 @@ const campaigns: Campaign[] = [
     name: "The scoops are back",
     slug: "scoops-are-back",
     kind: "seasonal",
-    artwork: "/gallery/ice-cream-chocolate.jpg",
+    artwork: "/food/8100c805-4d74-408e-9424-e2ac096c9115.jpg",
     artworkAlt:
-      "A chocolate soft-serve cone with a cartoon face, from Chickady's 'the scoops are back' campaign card.",
+      "A cup of Lotus-biscoff ice-cream scoops with biscuit crumble, from Chickady's own food photographs.",
     headline: "The scoops are back",
     body:
       "From the owner's own post: “THE SCOOPS ARE BACK — BIGGER, BETTER & MORE EXCITING TH…”, the public preview cuts the rest off. The frappe prices on the delivery platforms are not confirmed by the shop yet.",

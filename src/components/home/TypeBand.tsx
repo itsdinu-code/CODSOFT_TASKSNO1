@@ -13,12 +13,12 @@ const PHRASE =
 
 export function TypeBand() {
   return (
-    <div className="type-band" aria-hidden="true">
+    <div className="type-band type-band--over-hero" aria-hidden="true">
       <TextLoop
         text={PHRASE}
         shape="line"
         tilt={-2}
-        speed={64}
+        speed={72}
         fontSize={38}
         fontWeight={800}
         letterSpacing={3}
@@ -27,7 +27,7 @@ export function TypeBand() {
         ribbonWidth={72}
         color="#fff6e6"
         edgeFade={0.28}
-        pauseOnHover
+        pauseOnHover={false}
         className="type-band__loop"
       />
     </div>

@@ -8,7 +8,6 @@ import { Campaigns } from "@/components/home/Campaigns";
 import { ComboSlips } from "@/components/home/ComboSlips";
 import { Combos } from "@/components/home/Combos";
 import { DriftBoard } from "@/components/home/DriftBoard";
-import { Gallery } from "@/components/home/Gallery";
 import { Reviews } from "@/components/home/Reviews";
 import { Directions } from "@/components/home/Directions";
 import { Faq } from "@/components/home/Faq";
@@ -21,7 +20,6 @@ export const metadata: Metadata = {
     "Burgers, loaded fries, wings, nachos and the red meal boxes. The printed menu of Chickady's on 150 Feet By-pass Road, Alappakkam, Chennai.",
   alternates: { canonical: "/" },
 };
-
 function CampaignsFallback() {
   return (
     <section className="field-paper2 section" aria-hidden="true">
@@ -49,7 +47,6 @@ export default function HomePage() {  return (
       <ComboSlips />
       <Combos />
       <DriftBoard />
-      <Gallery />
       <Reviews />
       <Directions />
       <Faq />

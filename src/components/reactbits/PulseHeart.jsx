@@ -80,6 +80,7 @@ export default function PulseHeart({
   const [total, setTotal] = useState(count);
   const liked = controlled ? likedProp : inner;
   const [roll, setRoll] = useState(null);
+  const [shown, setShown] = useState({ liked, count: total });
 
   const rootRef = useRef(null);
   const pillRef = useRef(null);

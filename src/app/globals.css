@@ -491,15 +491,27 @@
 }
 
 /* ==========================================================================
-   React Bits sections — the marching ribbon and the drifting photo board
+   React Bits sections ï¿½ the marching ribbon and the drifting photo board
    ========================================================================== */
 
 @layer components {
   .type-band {
+    /* The TextLoop SVG runs on a 1200x520 canvas for a thin line ribbon;
+       crop to just the ink and centre it, so no dead cream space shows. */
+    display: flex;
+    align-items: center;
+    block-size: clamp(104px, 9vw, 150px);
     overflow: hidden;
     background: var(--color-paper);
-    padding-block: clamp(1rem, 2.4vw, 2rem);
     border-block: 2px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
+  }
+  /* The band rides up onto the hero's bottom edge so the ribbon lies across
+     the dark room, like a print laid over the counter front. */
+  .type-band--over-hero {
+    position: relative;
+    z-index: 10;
+    margin-block-start: calc(-1 * clamp(1.5rem, 3.5vw, 2.75rem));
+    border-block-start-color: transparent;
   }
   .type-band__loop {
     display: block;
