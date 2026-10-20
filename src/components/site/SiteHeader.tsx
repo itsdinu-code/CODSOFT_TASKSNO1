@@ -1,24 +1,47 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ChickadysLogo } from "@/components/brand/ChickadysLogo";
+import GooeyNav from "@/components/reactbits/GooeyNav";
+import { useMediaQuery } from "@/lib/hooks";
 import { useCart } from "@/lib/store/cart";
 
-const LINKS = [
-  { href: "/menu", label: "Menu" },
-  { href: "/combos", label: "Meal boxes" },
-  { href: "/reserve", label: "Reserve a table" },
-  { href: "/about", label: "Our story" },
-  { href: "/gallery", label: "The shop" },
-  { href: "/contact", label: "Find us" },
+const NAV = [
+  { label: "Home", href: "/" },
+  { label: "Menu", href: "/menu" },
+  { label: "Meal boxes", href: "/combos" },
+  { label: "Reserve", href: "/reserve" },
+  { label: "Our story", href: "/about" },
+  { label: "The shop", href: "/gallery" },
+  { label: "Find us", href: "/contact" },
 ];
+
+/** The compact pill set for medium windows — the drawer still holds all. */
+const NAV_COMPACT = [
+  NAV[0],
+  NAV[1],
+  NAV[3],
+  NAV[6],
+];
+
+function indexOfPath(pathname: string | null, list: typeof NAV): number {
+  if (!pathname) return 0;
+  const found = list.findIndex(
+    (link) => link.href === pathname || pathname.startsWith(`${link.href}/`),
+  );
+  return found < 0 ? 0 : found;
+}
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const router = useRouter();
   const { count, hydrated } = useCart();
   const [open, setOpen] = useState(false);
+  const wide = useMediaQuery("(min-width: 1024px)");
+  const navItems = wide ? NAV : NAV_COMPACT;
   const badgeRef = useRef<HTMLSpanElement>(null);
   const previous = useRef(count);
 
@@ -59,26 +82,28 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav aria-label="Main" className="hidden lg:block">
-          <ul className="flex items-center gap-7">
-            {LINKS.map((link) => {
-              const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
-              return (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    aria-current={active ? "page" : undefined}
-                    className={`t-body underline-offset-4 transition-colors hover:text-accent-deep ${
-                      active ? "font-semibold text-accent-deep" : "text-ink"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+        <div className="hidden sm:block">
+          <GooeyNav
+            items={navItems.map(({ label }) => ({ label }))}
+            activeIndex={indexOfPath(pathname, navItems)}
+            onChange={(index) => {
+              const target = navItems[index];
+              if (target && target.href !== pathname) router.push(target.href);
+            }}
+            theme="light"
+            size="sm"
+            frame={true}
+            color="#f4510b"
+            activeTextColor="#fff6e6"
+            particleCount={12}
+            spread={44}
+            animationTime={520}
+            timeVariance={220}
+            gooeyness={0.55}
+            wobble={0.45}
+            hoverEffect={true}
+          />
+        </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
           <Link
@@ -97,7 +122,7 @@ export function SiteHeader() {
           </Link>
           <button
             type="button"
-            className="btn btn-sm btn-quiet lg:hidden"
+            className="btn btn-sm btn-quiet sm:hidden"
             onClick={() => setOpen(true)}
             aria-expanded={open}
             aria-controls="mobile-nav"
@@ -110,7 +135,7 @@ export function SiteHeader() {
       {open ? (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-50 flex flex-col bg-paper lg:hidden"
+          className="fixed inset-0 z-50 flex flex-col bg-paper sm:hidden"
           role="dialog"
           aria-modal="true"
           aria-label="Site menu"
@@ -130,11 +155,12 @@ export function SiteHeader() {
           </div>
           <nav aria-label="Main" className="wrap flex-1 overflow-y-auto">
             <ul className="mt-4 space-y-1">
-              {LINKS.map((link) => (
+              {NAV.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
+                    aria-current={indexOfPath(pathname, NAV) === NAV.indexOf(link) ? "page" : undefined}
                     className="display block py-3 t-head text-ink transition-colors hover:text-accent-deep"
                   >
                     {link.label}

@@ -43,6 +43,24 @@ export function useOnline(): boolean {
   );
 }
 
+/** True while the viewport answers the media query (re-checked on change). */
+export function useMediaQuery(query: string): boolean {
+  const subscribe = useCallback(
+    (onChange: () => void) => {
+      const media = window.matchMedia(query);
+      media.addEventListener("change", onChange);
+      return () => media.removeEventListener("change", onChange);
+    },
+    [query],
+  );
+
+  return useSyncExternalStore(
+    subscribe,
+    () => window.matchMedia(query).matches,
+    () => false,
+  );
+}
+
 /** True once the component has hydrated in the browser. */
 export function useHydrated(): boolean {
   const subscribe = useCallback((onChange: () => void) => {
