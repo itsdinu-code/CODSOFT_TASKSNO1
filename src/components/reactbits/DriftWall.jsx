@@ -7,6 +7,7 @@
  */
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import "./DriftWall.css";
 
 const DEFAULT_ITEMS = Array.from({ length: 15 }, (_, i) => {
@@ -264,7 +265,14 @@ const DriftWall = ({
   const renderTile = (item, id, colIndex) => {
     const inner = (
       <span className="drift-wall__inner">
-        <img src={item.image} alt={item.title ?? ""} loading="lazy" decoding="async" draggable={false} />
+        <Image
+          src={item.image}
+          alt={item.title ?? ""}
+          fill
+          sizes="216px"
+          loading="lazy"
+          draggable={false}
+        />
         <span className="drift-wall__overlay" aria-hidden="true" />
       </span>
     );

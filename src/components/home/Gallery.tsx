@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { heldTiles } from "@/lib/gallery";
 import { restaurant } from "@/lib/restaurant";
+import Image from "next/image";
 
 /**
  * "Photo tiles with label strips."
@@ -66,12 +67,13 @@ export function Gallery() {
               <figure key={tile.caption} className="m-0">
                 <div className="relative aspect-4/5 overflow-hidden bg-paper-2">
                   {tile.src ? (
-                                        <img
+                    <Image
                       src={tile.src}
                       alt={tile.alt ?? ""}
                       loading="lazy"
                       width={600}
                       height={750}
+                      sizes="(max-width: 639px) 50vw, (max-width: 1023px) 25vw, 240px"
                       className="h-full w-full object-cover"
                     />
                   ) : (
@@ -119,4 +121,3 @@ export function Gallery() {
 }
 
 export default Gallery;
-

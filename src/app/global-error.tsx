@@ -1,5 +1,6 @@
 "use client";
 
+import * as Sentry from "@sentry/nextjs";
 /**
  * Root error page — fires only if the root layout itself breaks. It has to
  * stand alone, so it carries its own <html> and <body>.
@@ -12,6 +13,7 @@ export default function GlobalError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  Sentry.captureException(error);
   return (
     <html lang="en">
       <body

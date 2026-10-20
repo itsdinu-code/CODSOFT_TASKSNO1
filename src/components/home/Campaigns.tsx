@@ -3,6 +3,7 @@ import { connection } from "next/server";
 import { getCampaigns } from "@/lib/campaigns";
 import { getInstagramProfile } from "@/lib/instagram";
 import { CampaignBell } from "./CampaignBell";
+import Image from "next/image";
 
 /**
  * The campaign carousel.
@@ -72,12 +73,13 @@ export async function Campaigns() {
               }`}
             >
               {campaign.artwork ? (
-                <img
+                <Image
                   src={campaign.artwork}
                   alt={campaign.artworkAlt ?? campaign.headline}
                   width={campaign.theme === "black-red" ? 684 : 400}
                   height={campaign.theme === "black-red" ? 212 : 400}
                   loading="lazy"
+                  sizes="(max-width: 639px) 84vw, 380px"
                   className="h-full w-full object-cover"
                 />
               ) : campaign.poster ? (

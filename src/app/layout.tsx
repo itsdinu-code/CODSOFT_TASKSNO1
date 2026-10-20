@@ -114,6 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en-IN"
+      data-scroll-behavior="smooth"
       className={`${barlowCondensed.variable} ${barlow.variable} ${plexSans.variable} ${plexMono.variable}`}
     >
       <body>

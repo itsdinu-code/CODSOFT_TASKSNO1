@@ -1,5 +1,6 @@
 import { HeroCard } from "./HeroCard";
 import { restaurant } from "@/lib/restaurant";
+import Image from "next/image";
 
 /**
  * Hero — "card over a dim room".
@@ -21,13 +22,15 @@ export function Hero() {
         <div className="col-span-12 lg:col-span-4 lg:pl-4">
           <figure className="relative m-0">
             <div className="rotate-[-1.5deg] bg-paper p-2">
-                            <img
-                src="/food/d9e4a3c8-ff0f-449f-afe7-7a45cddb6206.jpg"
+              <Image
+                src="/food/d9e4a3c8-ff0f-449f-afe7-7a45cddb6206.webp"
                 alt="A fiery glazed crispy chicken burger with lettuce and house sauce, from Chickady's own food photographs."
                 width={405}
                 height={420}
                 className="drift h-full w-full object-cover"
                 fetchPriority="high"
+                priority
+                sizes="(max-width: 1023px) 31vw, 405px"
               />
             </div>
             <figcaption className="mt-3 max-w-[34ch] t-small text-on-ink-muted">

@@ -9,6 +9,7 @@ import {
   type IntroPhase,
 } from "@/lib/store/intro";
 import { useReducedMotion } from "@/lib/hooks";
+import Image from "next/image";
 import "./BrandIntro.css";
 
 /**
@@ -173,7 +174,7 @@ export function BrandIntro() {
                 strokeLinecap="round"
               />
             </svg>
-            <img
+            <Image
               src="/brand/chickadys-badge.png"
               alt=""
               width={384}

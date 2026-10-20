@@ -33,6 +33,7 @@ export function CheckoutForm() {
   const [notes, setNotes] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [idempotencyKey] = useState(() => crypto.randomUUID());
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -55,6 +56,7 @@ export function CheckoutForm() {
           customerPhone: phone,
           fulfilmentType,
           notes,
+          idempotencyKey,
         }),
       });
 

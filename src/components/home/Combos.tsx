@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { itemsByCategory } from "@/lib/menu/queries";
 import { formatRupees } from "@/lib/format";
+import Image from "next/image";
 
 /**
  * "Prices like a menu."
@@ -19,12 +20,13 @@ export function Combos() {
             Meal boxes
           </h2>
           <figure className="mt-6 m-0 hidden lg:block">
-                        <img
+            <Image
               src="/menu/meal-box-ultimate.jpg"
               alt="The Ultimate Savings Meal box from Chickady's fried-chicken board: red box of fried chicken with a Pepsi and dips."
               width={465}
               height={465}
               loading="lazy"
+              sizes="(min-width: 1024px) 31vw, 0px"
               className="aspect-4/5 w-full object-cover"
             />
           </figure>
@@ -66,4 +68,3 @@ export function Combos() {
 }
 
 export default Combos;
-

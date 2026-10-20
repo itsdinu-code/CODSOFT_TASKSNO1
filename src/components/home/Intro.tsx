@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { restaurant } from "@/lib/restaurant";
 
 /**
@@ -55,12 +56,13 @@ export function Intro() {
           </dl>
         </div>
         <figure className="col-span-12 m-0 lg:col-span-5">
-          <img
+          <Image
             src="/food/256b8273-d200-4416-b305-180ad3a31508.jpg"
             alt="The Chickady's fried-chicken feast: crispy pieces, glazed wings and strips with two dips, from the restaurant's own food photographs."
             width={720}
             height={540}
             loading="lazy"
+            sizes="(max-width: 1023px) 100vw, 42vw"
             className="reveal w-full object-cover"
           />
           <figcaption className="mt-3 t-body text-muted">
@@ -94,4 +96,3 @@ export function Intro() {
 }
 
 export default Intro;
-

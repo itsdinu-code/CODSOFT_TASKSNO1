@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
-import { validateCart, computeTotals } from "@/lib/pricing";
+import { validateCart } from "@/lib/pricing";
 import { orderCode } from "@/lib/format";
-import type { FulfilmentType, Order } from "@/types";
+import type { FulfilmentType } from "@/types";
+import { checkOrderRateLimit } from "@/lib/rate-limit";
+import { DuplicateOrderError, persistOrder } from "@/lib/orders/persist";
 
 /**
  * Order creation.
@@ -35,6 +37,18 @@ interface IncomingBody {
 }
 
 export async function POST(request: Request) {
+  const forwardedFor = request.headers.get("x-forwarded-for");
+  const identifier = forwardedFor?.split(",")[0]?.trim() || "unknown";
+  try {
+    const rate = await checkOrderRateLimit(identifier);
+    if (!rate.success) {
+      return NextResponse.json({ error: "Too many order attempts. Please wait a minute and try again." }, { status: 429 });
+    }
+  } catch (error) {
+    console.error("Order rate limiter unavailable", error);
+    return NextResponse.json({ error: "Ordering is temporarily unavailable. Please try again shortly." }, { status: 503 });
+  }
+
   let body: IncomingBody;
   try {
     body = (await request.json()) as IncomingBody;
@@ -91,25 +105,27 @@ export async function POST(request: Request) {
     );
   }
 
-  const totals = computeTotals(priced);
-  const created = new Date().toISOString();
   const code = orderCode(4822 + Math.floor(Math.random() * 90));
-
-  const order: Order = {
-    id: `demo-${code}-${Date.now()}`,
-    code,
-    createdAt: created,
-    status: "pending",
-    paymentStatus: "not-required",
-    fulfilmentType,
-    customerName,
-    customerPhone,
-    notes: (body.notes ?? "").trim() || undefined,
-    lines: priced,
-    totals,
-    events: [{ at: created, status: "pending", by: "Customer" }],
-    isDemo: true,
-  };
-
-  return NextResponse.json({ order, demo: true });
+  const idempotencyKey = (body.idempotencyKey ?? "").trim();
+  if (!idempotencyKey) {
+    return NextResponse.json({ error: "A request idempotency key is required." }, { status: 400 });
+  }
+  try {
+    const order = await persistOrder({
+      code,
+      fulfilmentType,
+      customerName,
+      customerPhone,
+      notes: (body.notes ?? "").trim() || undefined,
+      idempotencyKey,
+      lines: priced,
+    });
+    return NextResponse.json({ order, demo: false }, { status: 201 });
+  } catch (error) {
+    if (error instanceof DuplicateOrderError) {
+      return NextResponse.json({ error: error.message, code: error.code }, { status: 409 });
+    }
+    console.error("Order persistence failed", error);
+    return NextResponse.json({ error: "The order could not be saved. Please try again." }, { status: 503 });
+  }
 }

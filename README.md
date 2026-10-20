@@ -31,6 +31,19 @@ npm run lint                 # eslint
 Node 20 or newer. No environment variables are needed to run the prototype —
 see [`.env.example`](.env.example) for what a production deployment requires.
 
+### Production services
+
+Production order submission uses Supabase PostgreSQL and Supabase Auth. Apply
+[`docs/001_schema.sql`](docs/001_schema.sql), create each staff member in
+Supabase Auth, and add the matching `staff_profiles.auth_user_id` and role.
+Copy [`.env.example`](.env.example) to `.env.local` and provide the Supabase
+URL, anonymous key, service-role key, and Upstash Redis credentials before
+deploying. The service-role key is server-only.
+
+Admin and kitchen routes redirect unauthenticated users to `/login`. Order
+requests are server-priced, persisted with an idempotency key, rate-limited,
+and recorded with status events. Set `SENTRY_DSN` to enable error monitoring.
+
 ### Where to look
 
 | Route | What it is |

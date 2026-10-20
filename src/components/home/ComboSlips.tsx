@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { itemsByCategory } from "@/lib/menu/queries";
 import { formatRupees } from "@/lib/format";
+import Image from "next/image";
 
 /**
  * "Output slips along the edge."
@@ -87,13 +88,14 @@ export function ComboSlips() {
 
   return (
     <section className="relative isolate overflow-hidden bg-black">
-            <img
+      <Image
         src="/campaigns/fried-row.jpg"
         alt=""
         aria-hidden="true"
         width={1446}
         height={564}
         loading="lazy"
+        sizes="100vw"
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70"
       />
       <div
@@ -159,4 +161,3 @@ export function ComboSlips() {
 }
 
 export default ComboSlips;
-
