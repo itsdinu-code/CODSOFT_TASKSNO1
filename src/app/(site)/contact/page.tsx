@@ -89,8 +89,7 @@ export default function ContactPage() {
             <Link href="/menu" className="underline underline-offset-4 hover:text-accent-deep">
               Build a box on the menu
             </Link>{" "}
-            and collect it. This prototype&rsquo;s checkout is a simulation and
-            does not reach the kitchen.
+            and collect it. The checkout here is a simulation.
           </p>
         </ProseSection>
 

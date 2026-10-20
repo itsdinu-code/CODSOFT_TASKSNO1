@@ -15,9 +15,8 @@ export default function CartPage() {
           Your cart
         </h1>
         <p className="mt-4 max-w-[52ch] text-ink-2">
-          The order you have put together. Nothing is charged and nothing is
-          sent to the kitchen until the restaurant is connected to this
-          prototype.
+          The order you have put together. This demo does not send the
+          kitchen anything.
         </p>
         <div className="mt-10">
           <CartView />

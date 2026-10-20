@@ -86,8 +86,7 @@ export function ProductDetail({ item }: { item: MenuItem }) {
           <figure className="m-0">
             <DishArt kind={item.art} />
             <figcaption className="mt-2 t-small text-muted">
-              Illustration for the demo — the owner&rsquo;s photograph for this
-              dish is still owed.
+              Illustration — the photograph for this dish is still owed.
             </figcaption>
           </figure>
         ) : (
@@ -96,8 +95,7 @@ export function ProductDetail({ item }: { item: MenuItem }) {
             <div className="flex flex-1 flex-col justify-between p-6">
               <span className="display t-head text-ink">{item.name}</span>
               <span className="t-body text-muted">
-                No photograph of this dish has been supplied yet. The owner
-                still owes one.
+                Photograph still owed.
               </span>
             </div>
           </div>
@@ -160,9 +158,8 @@ export function ProductDetail({ item }: { item: MenuItem }) {
         </dl>
 
         {item.verification === "pending" ? (
-          <p className="mt-5 bg-paper-2 p-4 t-body text-ink">
-            This price comes from a public delivery listing captured on 19
-            October 2026. The restaurant has not confirmed it yet.
+          <p className="mt-5 t-small text-accent-deep">
+            Price from a public listing, not yet confirmed by the shop.
           </p>
         ) : null}
 

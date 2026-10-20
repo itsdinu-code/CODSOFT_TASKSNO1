@@ -23,7 +23,7 @@ const QUESTIONS = [
     topic: "Hours",
     question: "What time are you open?",
     answer:
-      "Public listings show noon to 11:45 pm every day. The owner's own campaign card says 'Open till NIGHT 12'. Confirm the day's hours before you travel — we publish the listing hours because they are the only ones we can verify.",
+      "Public listings show noon to 11:45 pm every day. The owner's own campaign card says 'Open till NIGHT 12'. Confirm the day's hours before you travel.",
   },
   {
     topic: "Spice",
@@ -41,7 +41,7 @@ const QUESTIONS = [
     topic: "Payment",
     question: "Can I pay on my phone?",
     answer:
-      "The listing says digital payments are accepted at the shop. This prototype takes no payment at all: the checkout is a simulation, no card details are collected and no order reaches the kitchen.",
+      "The listing says digital payments are accepted at the shop. The checkout here is a simulation — no card details are collected and no order reaches the kitchen.",
   },
 ];
 

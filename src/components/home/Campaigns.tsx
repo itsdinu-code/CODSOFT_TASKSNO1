@@ -90,6 +90,11 @@ export async function Campaigns() {
           </article>
         ))}
       </div>
+      <div className="wrap mt-6">
+        <p className="t-small text-muted">
+          The bell keeps its note in this browser — nothing is sent.
+        </p>
+      </div>
     </section>
   );
 }

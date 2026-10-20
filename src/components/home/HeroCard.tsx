@@ -86,10 +86,6 @@ export function HeroCard() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t-2 border-ink/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-[26ch] t-body text-muted">
-            Prototype — prices from the printed board; nothing is sent to the
-            kitchen.
-          </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-5">
             <Link href="/menu" className="btn">
               Order online

@@ -146,9 +146,6 @@ export function SiteHeader() {
               <Link href="/menu" className="btn w-full">
                 Order online
               </Link>
-              <p className="mt-4 t-body text-muted">
-                Demo — orders are simulated.
-              </p>
             </div>
           </nav>
         </div>

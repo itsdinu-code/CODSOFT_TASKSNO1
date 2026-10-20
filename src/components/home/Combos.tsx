@@ -48,7 +48,7 @@ export function Combos() {
                 ) : null}
                 {box.verification === "pending" ? (
                   <p className="mt-1 t-body text-accent-deep">
-                    Price from a public listing â€” not yet confirmed.
+                    Price from a listing — not yet confirmed.
                   </p>
                 ) : null}
               </article>
@@ -57,8 +57,7 @@ export function Combos() {
 
           <p className="mt-2 max-w-[52ch] t-body text-muted">
             Boxes are printed on the fried-chicken board. Contents and prices
-            are as at 19 October 2026; the owner should confirm the current
-            sheet before this goes live.
+            as read on 19 October 2026.
           </p>
         </div>
       </div>

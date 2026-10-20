@@ -53,9 +53,8 @@ export default function CombosPage() {
             ))}
           </ul>
           <p className="mt-6 t-body text-muted">
-            Contents and prices are as printed on the fried-chicken board on 19
-            October 2026. The owner should confirm the current sheet before this
-            page is published.
+            Contents and prices as printed on the fried-chicken board on 19
+            October 2026.
           </p>
         </ProseSection>
       </Prose>

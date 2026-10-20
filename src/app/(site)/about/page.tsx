@@ -7,7 +7,7 @@ import { listingFacts } from "@/lib/reviews";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "What Chickady's is, where it is, what the board says and what still needs the owner's confirmation.",
+    "Chickady's — fried chicken, burgers and loaded fries on 150 Feet By-pass Road, Alappakkam, Chennai. The menu, the story and how to find the shop.",
   alternates: { canonical: "/about" },
 };
 
@@ -37,54 +37,14 @@ export default function AboutPage() {
           </p>
         </ProseSection>
 
-        <ProseSection title="What we know, and how we know it">
+        <ProseSection title="Where the words come from">
           <p>
-            This site is a prototype built from material the restaurant has
-            published itself. The menu came from photographing the two printed
-            boards on 19 October 2026. The campaign pictures came from the
-            owner&rsquo;s own posts on the Google Maps business profile. The
-            address, phone number, opening hours and one public rating came
-            from the Zomato listing, read on the same day.
-          </p>
-          <p>
-            Everything that is a public listing rather than the restaurant
-            saying it directly is labelled as such on the page it appears on.
-            Where we do not know something, the page says that too, rather
-            than filling the gap with a plausible answer.
-          </p>
-        </ProseSection>
-
-        <ProseSection title="Still open questions">
-          <ul className="list-disc space-y-2 pl-5">
-            <li>
-              Whether the address is 19B or 19B1, and the exact postal form of
-              the locality — the listings disagree on how they write it.
-            </li>
-            <li>
-              The daily hours. Listings show noon to 11:45 pm; the
-              owner&rsquo;s own card says open till midnight.
-            </li>
-            <li>
-              The price, ingredients and current availability of the Red
-              Dragon burger. It is not orderable here until the shop confirms
-              it.
-            </li>
-            <li>
-              The ingredients, allergens and cross-contact notes for every
-              dish. Nothing on this site claims to be allergen information.
-            </li>
-            <li>
-              The tax and packaging rules, and whether the shop collects a
-              delivery fee of its own.
-            </li>
-            <li>
-              The FSSAI licence number, which has to be displayed at the
-              outlet and on invoices.
-            </li>
-          </ul>
-          <p>
-            The full list, with the decisions each answer needs, is in the
-            owner verification checklist in the project documentation.
+            The menu on this site was read off the two printed boards in the
+            shop on 19 October 2026. The campaign posters and most of the food
+            photographs come from the shop&rsquo;s own posts. The address,
+            phone, hours and public ratings come from the Zomato listing, read
+            on the same day. Where a fact is a listing rather than the shop
+            saying it directly, the page it sits on says so.
           </p>
         </ProseSection>
 
@@ -92,11 +52,9 @@ export default function AboutPage() {
           <p>
             The Zomato listing for the shop carries a rating of{" "}
             {listingFacts.rating} out of 5 from {listingFacts.ratingCount}{" "}
-            ratings, read on 19 October 2026. It describes the price as around ₹
+            ratings. It describes the price as around ₹
             {listingFacts.priceForTwo} for two, and says that digital payments
-            are accepted. The listing also has a photograph of the shopfront
-            which we have not used, because permission to reproduce it has not
-            been given.
+            are accepted.
           </p>
           <p>
             <a
@@ -122,15 +80,30 @@ export default function AboutPage() {
 
         <ProseSection title="Saying hello">
           <p>
-            The quickest way to reach the shop is to phone it on{" "}
+            Phone the shop on{" "}
             <a
               href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
               className="underline underline-offset-4 hover:text-accent-deep"
             >
               {restaurant.phone}
             </a>
-            . The number comes from a public listing, so please confirm it in
-            person if it matters.
+            , write to{" "}
+            <a
+              href={`mailto:${restaurant.email}`}
+              className="underline underline-offset-4 hover:text-accent-deep"
+            >
+              {restaurant.email}
+            </a>
+            , or catch the posts on{" "}
+            <a
+              href="https://www.instagram.com/chickadys"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline underline-offset-4 hover:text-accent-deep"
+            >
+              Instagram
+            </a>
+            .
           </p>
           <p>
             <Link href="/menu" className="underline underline-offset-4 hover:text-accent-deep">

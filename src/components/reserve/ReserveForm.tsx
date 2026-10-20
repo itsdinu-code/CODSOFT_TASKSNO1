@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
 import { restaurant } from "@/lib/restaurant";
 import { useReservations } from "@/lib/store/reservations";
 
@@ -69,10 +68,6 @@ export function ReserveForm() {
     <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
       <div className="bg-paper p-7 sm:p-9">
         <h2 className="display t-head text-ink">Request a table</h2>
-        <p className="mt-2 t-body text-ink-2">
-          Table requests in this demo stay on this device — the shop does not
-          receive them, so nothing is confirmed until the counter calls back.
-        </p>
 
         <form onSubmit={handleSubmit} className="mt-7 grid gap-4">
           <div className="grid gap-4 sm:grid-cols-2">
@@ -193,14 +188,14 @@ export function ReserveForm() {
       <div>
         <h3 className="display-wide t-head text-cream">Your table requests</h3>
         <p className="mt-2 max-w-[42ch] t-body text-cream/80">
-          Held in this browser as a demo. Call{" "}
+          For a confirmed table, call{" "}
           <a
             href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
             className="underline underline-offset-4 hover:text-accent"
           >
             {restaurant.phoneDisplay}
-          </a>{" "}
-          for a confirmed table.
+          </a>
+          .
         </p>
 
         <ul className="mt-6 grid gap-4">
@@ -219,7 +214,7 @@ export function ReserveForm() {
                 {r.note ? ` — “${r.note}”` : ""}
               </p>
               <p className="mt-1 t-small text-muted">
-                Requested, not confirmed — the shop has not seen this.
+                Requested, not confirmed.
               </p>
               <button
                 type="button"
@@ -236,12 +231,6 @@ export function ReserveForm() {
             </li>
           ) : null}
         </ul>
-
-        <p className="mt-8 max-w-[46ch] t-small text-on-ink-muted">
-          Listening for the real thing? A booking channel has not been set up
-          with the shop yet — <Link href="/contact" className="underline underline-offset-4">the contact page</Link> has the ways
-          that reach them today.
-        </p>
       </div>
     </div>
   );

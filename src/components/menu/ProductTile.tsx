@@ -88,7 +88,7 @@ export function ProductTile({ item }: { item: MenuItem }) {
 
         {item.verification === "pending" ? (
           <p className="mt-3 t-small leading-snug text-accent-deep">
-            Price from a public listing, not yet confirmed by the shop.
+            Price from a listing, not yet confirmed by the shop.
           </p>
         ) : null}
 
