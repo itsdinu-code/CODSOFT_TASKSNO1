@@ -43,10 +43,7 @@ export function CampaignBell({ campaignId, headline }: { campaignId: string; hea
         onChange={handleChange}
         label={on ? `Reminder for ${headline}, kept on this device` : `Notify me when ${headline} is back`}
       />
-      <p className="mt-2 t-small text-muted">
-        Demo preference — kept in this browser only, nothing is sent to the
-        restaurant.
-      </p>
+      <p className="mt-2 t-small text-muted">Demo — stays on this device.</p>
     </div>
   );
 }

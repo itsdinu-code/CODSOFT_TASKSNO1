@@ -35,9 +35,9 @@ export function Intro() {
           Fried to order
         </h2>
         <p className="reveal col-span-12 text-ink-2 lg:col-span-4 lg:col-start-8">
-          Chickady&rsquo;s fries chicken, builds burgers and pours loaded fries on
-          150 Feet By-pass Road in Alappakkam. Everything comes out in the red
-          boxes, and the scoops stay on until late.
+          Chickady&rsquo;s fries chicken, builds burgers and pours loaded fries
+          in Alappakkam. Everything comes out in the red boxes, and the scoops
+          stay on until late.
         </p>
       </div>
 

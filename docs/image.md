@@ -89,7 +89,7 @@ the menu/hero imagery (not the drift wall).
 | `fried-row.jpg` | A row of the red fried-chicken boxes | Held |
 | `gallery/ice-cream-vanilla.jpg` | Vanilla scoop from the "scoops are back" card | Held — owner post; retired from the carousel |
 | `gallery/ice-cream-chocolate.jpg` | Chocolate scoop, same card | Held — owner post; **retired from the home carousel 20 Oct 2026** — the "scoops are back" card now shows `/food/8100c805-4d74-408e-9424-e2ac096c9115.jpg` (Lotus-biscoff scoops, from the owner's own set) |
-| `gallery/maps-profile-updates.jpg` | The Google Maps profile screenshot | Held — used only to *document* the listing, never styled as food |
+| `gallery/maps-profile-updates.jpg` | The Google Maps profile screenshot | Held — **no longer shown on the site (20 Oct 2026)**; the Reviews card is typographic now. Kept on disk for reference only |
 
 ## The DriftWall selection ("food only")
 

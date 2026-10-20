@@ -39,10 +39,7 @@ export function OrderCard() {
                 Call {restaurant.phoneDisplay}
               </Link>
             </div>
-            <p className="mt-4 t-small text-muted">
-              Prototype checkout. Nothing is charged and no order is sent to the
-              kitchen.
-            </p>
+            <p className="mt-4 t-small text-muted">Demo — no payment is taken.</p>
           </div>
         </div>
       </div>

@@ -109,13 +109,11 @@ export function SiteFooter() {
             </li>
           </ul>
           <p className="mt-5 t-body text-muted">
-            {fullAddress}. Prototype build — address, hours and phone are taken from
-            public listings and are awaiting the owner&rsquo;s confirmation.
-          </p>
-          <p className="mt-2 t-body text-muted">
-            © {COPYRIGHT_YEAR} Chickady&apos;s. Built as a prototype for
-            the restaurant. No orders are sent and no payment is taken.
-          </p>
+          © {COPYRIGHT_YEAR} Chickady&rsquo;s. {fullAddress}. A prototype for
+          the restaurant — no orders are sent and no payment is taken;
+          address, hours and phone come from public listings, pending the
+          owner&rsquo;s confirmation.
+        </p>
         </div>
       </div>
     </footer>

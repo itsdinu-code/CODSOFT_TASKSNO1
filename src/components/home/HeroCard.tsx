@@ -77,8 +77,6 @@ export function HeroCard() {
           <p className="display-wide t-lead leading-tight text-ink">
             Open noon to 11:45 pm.
             <br />
-            150 Feet By-pass Road.
-            <br />
             Takeaway and dine-in.
           </p>
           <p className="text-ink-2">
@@ -89,8 +87,8 @@ export function HeroCard() {
 
         <div className="mt-10 flex flex-col gap-4 border-t-2 border-ink/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-[26ch] t-body text-muted">
-            Prototype build. Prices come from the printed menu board; no order
-            is sent to the kitchen and no payment is taken.
+            Prototype — prices from the printed board; nothing is sent to the
+            kitchen.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-5">
             <Link href="/menu" className="btn">

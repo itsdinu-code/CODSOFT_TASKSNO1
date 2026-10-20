@@ -6,7 +6,6 @@ import { Intro } from "@/components/home/Intro";
 import { MenuSheet } from "@/components/home/MenuSheet";
 import { Campaigns } from "@/components/home/Campaigns";
 import { ComboSlips } from "@/components/home/ComboSlips";
-import { Combos } from "@/components/home/Combos";
 import { DriftBoard } from "@/components/home/DriftBoard";
 import { Reviews } from "@/components/home/Reviews";
 import { Directions } from "@/components/home/Directions";
@@ -45,7 +44,6 @@ export default function HomePage() {  return (
         <Campaigns />
       </Suspense>
       <ComboSlips />
-      <Combos />
       <DriftBoard />
       <Reviews />
       <Directions />

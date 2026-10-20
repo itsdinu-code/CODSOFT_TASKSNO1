@@ -3,10 +3,8 @@
 import { useState } from "react";
 
 /**
- * "Tabbed index cards."
- *
- * Questions filed like cards in a drawer: each card overlaps the one above
- * and carries a tab on its top edge. One card is open at a time.
+ * A quiet question sheet: one row per question, hairline rules between
+ * them, one answer open at a time. No stacked cards, no overlap.
  */
 const QUESTIONS = [
   {
@@ -47,10 +45,8 @@ const QUESTIONS = [
   },
 ];
 
-const CARD_TONES = ["bg-paper", "bg-accent", "bg-ink"];
-
 export function Faq() {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState<number | null>(0);
 
   return (
     <section className="field-paper2 section">
@@ -60,59 +56,48 @@ export function Faq() {
             Before you order
           </h2>
           <p className="reveal col-span-12 text-ink-2 lg:col-span-5 lg:col-start-8">
-            Where the answer is not confirmed yet, it says so. Nothing here is
-            invented to fill a gap.
+            The answers we can verify, plainly.
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-[1040px]">
+        <ul className="mx-auto mt-12 max-w-[1040px] list-none border-t-2 border-ink/15">
           {QUESTIONS.map((item, index) => {
             const isOpen = open === index;
-            const tone = CARD_TONES[index % CARD_TONES.length];
-            const dark = tone === "bg-ink";
-            const text = dark ? "text-cream" : "text-ink";
             return (
-              <div
-                key={item.topic}
-                className="relative"
-                style={{ marginTop: index === 0 ? 0 : -84, zIndex: index + 1 }}
-              >
-                <span
-                  aria-hidden="true"
-                  className={`absolute -top-[34px] flex h-[34px] w-[190px] items-center px-4 t-body font-semibold ${tone} ${text}`}
-                  style={{
-                    left: `${Math.min(index, 4) * 34}px`,
-                    clipPath:
-                      "polygon(0 0, 100% 0, 100% 100%, 14px 100%, 0 calc(100% - 14px))",
-                  }}
-                >
-                  {item.topic}
-                </span>
+              <li key={item.topic} className="border-b-2 border-ink/15">
                 <button
                   type="button"
-                  onClick={() => setOpen(isOpen ? -1 : index)}
+                  onClick={() => setOpen(isOpen ? null : index)}
                   aria-expanded={isOpen}
-                  aria-controls={`faq-panel-${index}`}
-                  className={`block w-full cursor-pointer px-5 py-6 text-left sm:px-8 ${tone} ${text}`}
+                  className="group flex w-full items-center justify-between gap-6 py-7 text-left"
                 >
-                  <span className="block t-body font-medium">
-                    {item.question}
+                  <span className="min-w-0">
+                    <span className="block t-small uppercase tracking-[0.25em] text-muted">
+                      {item.topic}
+                    </span>
+                    <span className="mt-2 block display-wide t-head text-ink transition-colors group-hover:text-accent-deep">
+                      {item.question}
+                    </span>
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className={`mt-1 relative inline-flex size-9 shrink-0 items-center justify-center rounded-full border-2 transition-colors ${
+                      isOpen ? "rotate-45 border-ink bg-ink text-cream" : "border-ink/20 text-ink"
+                    }`}
+                  >
+                    <span className="absolute block h-[2px] w-4 bg-current" />
+                    <span className="absolute block h-[2px] w-4 rotate-90 bg-current" />
                   </span>
                 </button>
-                {isOpen ? (
-                  <div
-                    id={`faq-panel-${index}`}
-                    className={`px-5 pb-7 pt-1 sm:px-8 ${tone} ${text}`}
-                  >
-                    <p className="max-w-[56ch] t-body leading-relaxed">
-                      {item.answer}
-                    </p>
-                  </div>
-                ) : null}
-              </div>
+                <div className={isOpen ? "block" : "hidden"}>
+                  <p className="-mt-2 max-w-[62ch] pb-8 t-body text-ink-2">
+                    {item.answer}
+                  </p>
+                </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );
