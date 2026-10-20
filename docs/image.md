@@ -51,7 +51,7 @@ actually visible. Highlights:
 | `d0d759d2-…jpg` | Biscoff frappe with Lotus biscuit |
 | `d6284f56-…jpg` | Crispy drums packed to go |
 | `d6baeaa1-…jpg` | Virgin mojito |
-| `d9e4a3c8-…jpg` | Fiery glazed crispy burger |
+| `d9e4a3c8-…jpg` | Fiery glazed crispy burger (hero card) |
 | `e449695b-…jpg` | Orange iced refreshment |
 | `e7127081-…jpg` | Four crispy burgers lined up |
 | `ea6ba5a4-…jpg` | Burger + fries + cola meal box |
@@ -71,7 +71,7 @@ the menu/hero imagery (not the drift wall).
 |---|---|
 | `box-drumsticks.jpg` | Drumsticks in the red box |
 | `box-loaded-fries.jpg` | Loaded fries box |
-| `box-solid-treat.jpg` | Take-home box with fries and a Pepsi (hero card) |
+| `box-solid-treat.jpg` | Take-home box with fries and a Pepsi |
 | `meal-box-ultimate.jpg` | Ultimate Savings Meal, fourteen pieces |
 | `wings-buffalo.jpg` | Buffalo wings, striped box |
 | `wings-korean-bbq.jpg` | Korean BBQ wings, striped box |

@@ -22,8 +22,8 @@ export function Hero() {
           <figure className="relative m-0">
             <div className="rotate-[-1.5deg] bg-paper p-2">
                             <img
-                src="/menu/box-solid-treat.jpg"
-                alt="Chickady's red takeaway box of fried chicken with fries and a Pepsi, photographed from the printed fried-chicken board."
+                src="/food/d9e4a3c8-ff0f-449f-afe7-7a45cddb6206.jpg"
+                alt="A fiery glazed crispy chicken burger with lettuce and house sauce, from Chickady's own food photographs."
                 width={405}
                 height={420}
                 className="drift h-full w-full object-cover"
@@ -31,7 +31,7 @@ export function Hero() {
               />
             </div>
             <figcaption className="mt-3 max-w-[34ch] t-small text-on-ink-muted">
-              Taken from Chickady&rsquo;s own printed fried-chicken board. Phone{" "}
+              Taken from Chickady&rsquo;s own food photographs. Phone{" "}
               <a
                 href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
                 className="underline underline-offset-4 hover:text-cream"
